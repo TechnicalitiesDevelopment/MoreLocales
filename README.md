@@ -19,7 +19,8 @@ Finnish (fi-FI) <img src="https://catamphetamine.github.io/country-flag-icons/3x
 Romanian (ro-RO) <img src="https://catamphetamine.github.io/country-flag-icons/3x2/RO.svg" width="20">  
 Indonesian (id-ID) <img src="https://catamphetamine.github.io/country-flag-icons/3x2/ID.svg" width="20">  
  
-<small>Wish to add another language to this list? [Make an issue!](https://github.com/Angeltrisi/MoreLocales/issues)</small>
+<small>Wish to add another language to this list? [Make an issue!](https://github.com/Angeltrisi/MoreLocales/issues)</small>  
+<small>Before doing so, note that due to the way the game renders fonts, we are limited to only being able to render fonts that are written from left to right.</small>  
 
 # Important Note
 Localization for vanilla entries is not currently supported in all of these languages. 
