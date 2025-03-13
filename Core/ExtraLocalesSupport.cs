@@ -44,7 +44,7 @@ namespace MoreLocales.Core
 
             LoadCustomCultureData();
         }
-        public static void LoadCustomCultureData()
+        private static void LoadCustomCultureData()
         {
             string pathToCustomCultureData = Path.Combine(Main.SavePath, customCultureDataName);
 
@@ -102,6 +102,31 @@ namespace MoreLocales.Core
             {
                 File.WriteAllText(pathToCustomCultureData, "");
                 WriteFile();
+            }
+
+            UnregisterCultures();
+        }
+        private static void UnregisterCultures()
+        {
+            // TODO: Revert to previous vanilla culture instead of the default culture.
+            LanguageManager.Instance.SetLanguage(GameCulture.DefaultCulture);
+            CallSetTitle(Main.instance);
+
+            extraCultures.Clear();
+
+            var vanillaLegacyCultures = GetLegacyCultures();
+            var vanillaNamedCultures = GetNamedCultures();
+
+            CultureNamePlus[] values = Enum.GetValues<CultureNamePlus>();
+            for (int i = 0; i < values.Length; i++)
+            {
+                CultureNamePlus newCulture = values[i];
+
+                if (newCulture == CultureNamePlus.Unknown)
+                    continue;
+
+                vanillaLegacyCultures.Remove((int)newCulture);
+                vanillaNamedCultures.Remove((GameCulture.CultureName)newCulture);
             }
         }
     }

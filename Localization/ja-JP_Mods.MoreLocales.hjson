@@ -1,1 +1,20 @@
+Configs: {
+	// Headers.Fonts: Font Settings
 
+	ClientSideConfig: {
+		// DisplayName: Client Side Config
+
+		ForcedFont: {
+			// Label: Force Localized Font Type
+			// Tooltip: Forces the game to use this type of localized font, disregarding the current language settings. This is {$Configs.LocalizedFont.None.Label} by default, which means the font will dynamically change with the chosen language.
+		}
+	}
+
+	LocalizedFont: {
+		// Tooltip: The type of font the game uses. Changes to the font for different languages are necessary due to Unicode and Terraria restrictions
+		// None.Label: None
+		// Default.Label: Default
+		// Japanese.Label: Japanese
+		// Korean.Label: Korean
+	}
+}

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terraria.Localization;
+﻿using MoreLocales.Utilities;
 
 namespace MoreLocales.Core
 {
@@ -30,5 +25,18 @@ namespace MoreLocales.Core
         Romanian = 25,
         Indonesian = 26,
         Unknown = 9999,
+    }
+    /// <summary>
+    /// List of fonts that are needed to support different languages, especially Asian languages.
+    /// </summary>
+    public enum LocalizedFont
+    {
+        /// <summary>
+        /// Does not change the font. Additionally, sets <see cref="FontHelper.forcedFont"/> to false.
+        /// </summary>
+        None,
+        Default,
+        Japanese,
+        Korean
     }
 }

@@ -1,10 +1,5 @@
 ﻿using ReLogic.Content;
 using ReLogic.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.Localization;
@@ -30,20 +25,20 @@ namespace MoreLocales.Core
             Main.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp,
                 DepthStencilState.None, RasterizerState.CullNone, null, Main.UIScaleMatrix);
 
-            Asset<DynamicSpriteFont> testFont = ModContent.Request<DynamicSpriteFont>("MoreLocales/Assets/ItemStack-KR", AssetRequestMode.ImmediateLoad);
+            Asset<DynamicSpriteFont> testFont = ModContent.Request<DynamicSpriteFont>("MoreLocales/Assets/ItemStack-JP", AssetRequestMode.ImmediateLoad);
 
             Vector2 padding = new(128f);
             float yBetween = 32f;
             float xBetween = 600f;
 
             SpriteBatch sb = Main.spriteBatch;
-            DynamicSpriteFont testVanilla = FontAssets.CombatText[1].Value;// FontAssets.ItemStack.Value;
+            DynamicSpriteFont testVanilla = FontAssets.CombatText[0].Value;
 
             for (int i = 0; i < 4; i++)
             {
                 string testString = i switch
                 {
-                    0 => "0123456789",
+                    0 => "abcdefg",
                     1 => "áêç",
                     2 => "бгд",
                     3 => "汉字测试",

@@ -1,3 +1,4 @@
 displayName = Localization Plus
 author = qAngel
+side = Client
 version = 0.1
