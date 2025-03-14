@@ -1,6 +1,9 @@
 # Localization Plus
-This mod (Localization Plus) adds the following languages to the game's settings and allows for mods to add their own localizations in the same way as they would do with natively supported languages: 
+This mod (Localization Plus) is a mod all about adding extra localization features for players and modders alike.  
+Languages are now changeable without needing to exit your current world, via a small UI element near the Settings button.  
+Adds the following cultures to the game's language settings and allows for mods to add their own localizations in the same way as they would do with natively supported languages: 
 
+English - United Kingdom (en-GB) <img src="https://catamphetamine.github.io/country-flag-icons/3x2/GB.svg" width="20">  
 Japanese (ja-JP) <img src="https://catamphetamine.github.io/country-flag-icons/3x2/JP.svg" width="20">  
 Korean (ko-KR) <img src="https://catamphetamine.github.io/country-flag-icons/3x2/KR.svg" width="20">  
 Chinese - Traditional (zh-Hant) <img src="https://catamphetamine.github.io/country-flag-icons/3x2/TW.svg" width="20">  
