@@ -35,4 +35,3 @@ This piece of software has NO license, which means that if you wish to use any o
 ## Special Thanks
 [Jopo](https://github.com/JavidPack) (for pointers on how to fix font issues)  
 [Stevie](https://github.com/steviegt6/) (for the interesting insight on font assets)  
-[The WhatFontIs website](https://www.whatfontis.com/) (for the eldritch knowledge of finding what the font used for combat numbers is)
