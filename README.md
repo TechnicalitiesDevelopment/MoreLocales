@@ -33,5 +33,5 @@ However, that is what I'm striving for, and if you speak any of these languages,
 This piece of software has NO license, which means that if you wish to use any of the code or assets in this mod in your own project, you have to ask first. Contacting me through GitHub for this is fine.
 
 ## Special Thanks
-[Jopo](https://github.com/JavidPack) (for pointers on how to fix font issues)  
+[Jopo](https://github.com/JavidPack) (for pointers on how to fix font issues and on how to give languages proper fallback values)  
 [Stevie](https://github.com/steviegt6/) (for the interesting insight on font assets)  
