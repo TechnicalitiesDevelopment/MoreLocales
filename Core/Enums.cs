@@ -7,23 +7,24 @@ namespace MoreLocales.Core
     /// </summary>
     public enum CultureNamePlus
     {
-        Japanese = 10,
-        Korean = 11,
-        TraditionalChinese = 12,
-        Turkish = 13,
-        Thai = 14,
-        Ukrainian = 15,
-        LatinAmericanSpanish = 16,
-        Czech = 17,
-        Hungarian = 18,
-        PortugalPortuguese = 19,
-        Swedish = 20,
-        Dutch = 21,
-        Danish = 22,
-        Vietnamese = 23, // omg is this a mirrorman reference
-        Finnish = 24,
-        Romanian = 25,
-        Indonesian = 26,
+        BritishEnglish = 10,
+        Japanese,
+        Korean,
+        TraditionalChinese,
+        Turkish,
+        Thai,
+        Ukrainian,
+        LatinAmericanSpanish,
+        Czech,
+        Hungarian,
+        PortugalPortuguese,
+        Swedish,
+        Dutch,
+        Danish,
+        Vietnamese, // omg is this a mirrorman reference
+        Finnish,
+        Romanian,
+        Indonesian,
         Unknown = 9999,
     }
     /// <summary>

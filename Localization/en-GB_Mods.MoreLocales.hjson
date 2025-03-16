@@ -1,0 +1,152 @@
+Configs: {
+	// Headers.Fonts: Font Settings
+
+	ClientSideConfig: {
+		// DisplayName: Client Side Config
+
+		ForcedFont: {
+			// Label: Force Localized Font Type
+			// Tooltip: Forces the game to use this type of localized font, disregarding the current language settings. This is {$Configs.LocalizedFont.None.Label} by default, which means the font will dynamically change with the chosen language.
+		}
+	}
+
+	LocalizedFont: {
+		// Tooltip: The type of font the game uses. Changes to the font for different languages are necessary due to Unicode and Terraria restrictions
+		// None.Label: None
+		// Default.Label: Default
+		// Japanese.Label: Japanese
+		// Korean.Label: Korean
+	}
+}
+
+Cultures: {
+	// Common.StandardSubtitle: Standard
+
+	English: {
+		// Title: English (English)
+		// Subtitle: United States
+	}
+
+	German: {
+		// Title: German (Deutsch)
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Italian: {
+		// Title: Italian (Italiano)
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	French: {
+		// Title: French (Français)
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Spanish: {
+		// Title: Spanish (Español)
+		// Subtitle: Spain
+	}
+
+	Russian: {
+		// Title: Russian (Русский)
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Chinese: {
+		// Title: Chinese (中文)
+		// Subtitle: Simplified
+	}
+
+	Portuguese: {
+		// Title: Portuguese (Português)
+		// Subtitle: Brazil
+	}
+
+	Polish: {
+		// Title: Polish (Polski)
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	BritishEnglish: {
+		// Title: English (English)
+		// Subtitle: United Kingdom
+	}
+
+	Japanese: {
+		// Title: Japanese (日本語)
+		// Subtitle: Hyoujungo
+	}
+
+	Korean: {
+		// Only display as 한국어 with correct LocalizedFont
+		// Otherwise Hangug-eo
+		// Title: Korean ({0})
+		// Subtitle: South Korea
+	}
+
+	TraditionalChinese: {
+		// Title: Chinese (中文)
+		// Subtitle: Traditional
+	}
+
+	Turkish: {
+		// Title: Turkish (Türkçe)
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Thai: {
+		// Only display as ภาษาไทย with correct LocalizedFont
+		// Otherwise Phạsā Thaị
+		// Title: Thai ({0})
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Ukrainian: {
+		// Title: Ukrainian (Українська)
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	LatinAmericanSpanish: {
+		// Title: Spanish (Español)
+		// Subtitle: Standard Latin American
+	}
+
+	Czech: {
+		// Title: Czech (Čeština)
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Hungarian: {
+		// Title: Hungarian (Magyar)
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	PortugalPortuguese: {
+		// Title: Portuguese (Português)
+		// Subtitle: Portugal
+	}
+
+	Dutch: {
+		// Title: Dutch (Nederlands)
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Danish: {
+		// Title: Danish (Dansk)
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	// Only display as Tiếng Việt with correct LocalizedFont
+	// Otherwise Tieng Viet
+	// Vietnamese.Title: Vietnamese (Tieng Viet)
+
+	Finnish: {
+		// Title: Finnish (Suomi)
+		// Subtitle: Kirjakieli
+	}
+
+	Swedish: {
+		// Title: Swedish (Svenska)
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+}
