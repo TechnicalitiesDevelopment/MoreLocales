@@ -30,8 +30,9 @@ Localization for vanilla entries is not currently supported in all of these lang
 However, that is what I'm striving for, and if you speak any of these languages, I would greatly appreciate any contribution.
 
 ## License
-This piece of software has NO license, which means that if you wish to use any of the code or assets in this mod in your own project, you have to ask first. Contacting me through GitHub for this is fine.
+This piece of software has NO license, which means that if you wish to use any of the code in your own project, you have to ask first. Contacting me through GitHub for this is fine. You may also use the .xnb font files, and the .dynamicspritefont bases found in Assets.  
+You may consider this mod an open source mod in that it is being developed collaboratively, and takes everyone's opinions into account, however, the above still applies.  
 
 ## Special Thanks
 [Jopo](https://github.com/JavidPack) (for pointers on how to fix font issues and on how to give languages proper fallback values)  
-[Stevie](https://github.com/steviegt6/) (for the interesting insight on font assets)  
+[Tomat](https://github.com/steviegt6/) (for the interesting insight on font assets)  
