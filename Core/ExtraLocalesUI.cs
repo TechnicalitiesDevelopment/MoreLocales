@@ -7,10 +7,8 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using Terraria.ID;
 using MonoMod.Cil;
 using System;
-using Terraria.ModLoader.Core;
 using MoreLocales.Common;
 using System.Reflection;
 
@@ -18,14 +16,14 @@ namespace MoreLocales.Core
 {
     public class ExtraLocalesUI : ModSystem
     {
-        private static bool testOverlap = false;
+        //private static bool testOverlap = false;
         public const int betterLangMenuID = 74592; //LANGS
         public static BetterLangMenuUI betterLangMenu = new();
         public override void Load()
         {
             IL_Main.DrawMenu += GoToBetterLangMenuInstead;
         }
-        private static void GoToBetterLangMenuInstead(MonoMod.Cil.ILContext il)
+        private static void GoToBetterLangMenuInstead(ILContext il)
         {
             Mod mod = ModContent.GetInstance<MoreLocales>();
             try
@@ -66,7 +64,7 @@ namespace MoreLocales.Core
             Main.menuMode = 888;
         }
         #region DEBUGGING
-        private void On_Main_DrawInterface(On_Main.orig_DrawInterface orig, Main self, GameTime gameTime)
+        private static void On_Main_DrawInterface(On_Main.orig_DrawInterface orig, Main self, GameTime gameTime)
         {
             orig(self, gameTime);
 
@@ -103,16 +101,17 @@ namespace MoreLocales.Core
                 for (int j = 0; j < 2; j++)
                 {
                     DynamicSpriteFont font = j == 0 ? testVanilla : testFont.Value;
-                    sb.DrawString(font, testString, padding + new Vector2(j == 0 ? 0 : testOverlap ? 0 : xBetween, i * yBetween), Color.White);
+                    sb.DrawString(font, testString, padding + new Vector2(j == 0 ? 0 : true ? 0 : xBetween, i * yBetween), Color.White);
                 }
             }
 
             Main.spriteBatch.End();
         }
-        #endregion
 
         public override void PostUpdateDusts()
         {
+            return;
+
             if (Main.keyState.IsKeyUp(Keys.F) && !Main.oldKeyState.IsKeyUp(Keys.F))
             {
                 string target = "pt-PT";
@@ -122,23 +121,7 @@ namespace MoreLocales.Core
                     LanguageManager.Instance.SetLanguage("en-US");
                 Main.NewText(LanguageManager.Instance.ActiveCulture.Name);
             }
-
-            /*
-            if (Main.keyState.IsKeyUp(Keys.G) && !Main.oldKeyState.IsKeyUp(Keys.G))
-            {
-                testOverlap = !testOverlap;
-            }
-
-            if (Main.keyState.IsKeyUp(Keys.F) && !Main.oldKeyState.IsKeyUp(Keys.F))
-            {
-                bool hasFont = ModContent.HasAsset("MoreLocales/Assets/MouseText");
-                Main.NewText(hasFont);
-                if (LanguageManager.Instance.ActiveCulture.Name != "ja-JP")
-                    LanguageManager.Instance.SetLanguage("ja-JP");
-                else
-                    LanguageManager.Instance.SetLanguage("en-US");
-            }
-            */
         }
+        #endregion
     }
 }

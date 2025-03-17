@@ -5,8 +5,10 @@ using static Terraria.Localization.GameCulture;
 
 namespace MoreLocales.Utilities
 {
-    public static class CultureHelpers
+    public static class CultureHelper
     {
+        public static bool NeedsLocalizedTitle(string cultureKey) => Language.Exists($"{cultureKey}.LocalizedFont");
+        public static string FullName(this GameCulture culture) => culture.IsCustom() ? ((CultureNamePlus)culture.LegacyId).ToString() : ((CultureName)culture.LegacyId).ToString();
         public static bool IsCustom(this GameCulture culture) => ExtraLocalesSupport.extraCultures.ContainsValue(culture);
         public static bool TryGetLocalizedFont(this GameCulture culture, out LocalizedFont font)
         {

@@ -1,9 +1,9 @@
 ﻿using MoreLocales.Core;
 using ReLogic.Content;
 using ReLogic.Graphics;
-using System.Globalization;
 using Terraria;
 using Terraria.GameContent;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace MoreLocales.Utilities
@@ -18,7 +18,8 @@ namespace MoreLocales.Utilities
         private static GameFonts japaneseFonts;
         private static GameFonts koreanFonts;
         private static bool forcedFont = false;
-        private static bool usingLocalizedFont = false;
+        public static bool usingLocalizedFont = false;
+        public static LocalizedFont currentLocalizedFont = LocalizedFont.None;
         static FontHelper()
         {
             if (Main.dedServ)
@@ -80,6 +81,9 @@ namespace MoreLocales.Utilities
 
             usingLocalizedFont = font > LocalizedFont.Default;
 
+            if (usingLocalizedFont)
+                currentLocalizedFont = font;
+
             SwitchFontInner(target);
 
             forcedFont = setAsForcedFont;
@@ -91,12 +95,33 @@ namespace MoreLocales.Utilities
             FontAssets.DeathText = target.DeathText;
             FontAssets.CombatText = target.CombatText;
         }
+        public static bool? LocalizedFontAvailable(this CultureNamePlus culture)
+        {
+            LocalizedFont font = culture.GetLocalizedFont();
+            if (font == LocalizedFont.None)
+                return null;
+            return font < LocalizedFont.Thai;
+        }
+        public static bool IsUsingAppropriateFont(GameCulture culture)
+        {
+            if (culture.TryGetLocalizedFont(out LocalizedFont font))
+                return IsUsingFont(font);
+            return false;
+        }
+        public static bool IsUsingFont(LocalizedFont font)
+        {
+            if (currentLocalizedFont == font)
+                return usingLocalizedFont;
+            return false;
+        }
         public static LocalizedFont GetLocalizedFont(this CultureNamePlus culture)
         {
             return culture switch
             {
                 CultureNamePlus.Japanese => LocalizedFont.Japanese,
                 CultureNamePlus.Korean => LocalizedFont.Korean,
+                CultureNamePlus.Thai => LocalizedFont.Thai,
+                CultureNamePlus.Vietnamese => LocalizedFont.Vietnamese,
                 _ => LocalizedFont.None
             };
         }

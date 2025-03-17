@@ -38,6 +38,8 @@ namespace MoreLocales.Core
         None,
         Default,
         Japanese,
-        Korean
+        Korean,
+        Thai,
+        Vietnamese
     }
 }

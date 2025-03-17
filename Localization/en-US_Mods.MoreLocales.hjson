@@ -16,11 +16,16 @@ Configs: {
 		Default.Label: Default
 		Japanese.Label: Japanese
 		Korean.Label: Korean
+		Thai.Label: Thai
+		Vietnamese.Label: Vietnamese
 	}
 }
 
 Cultures: {
-	Common.StandardSubtitle: Standard
+	Common: {
+		StandardSubtitle: Standard
+		LocalizedFontUnavailable: This language cannot be used because it requires a font that is currently not in the mod. Please wait for the next update!
+	}
 
 	English: {
 		Title: English (English)
@@ -28,42 +33,42 @@ Cultures: {
 	}
 
 	German: {
-		Title: German (Deutsch)
+		Title: Deutsch (German)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Italian: {
-		Title: Italian (Italiano)
+		Title: Italiano (Italian)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	French: {
-		Title: French (Français)
+		Title: Français (French)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Spanish: {
-		Title: Spanish (Español)
+		Title: Español (Spanish)
 		Subtitle: Spain
 	}
 
 	Russian: {
-		Title: Russian (Русский)
+		Title: Русский (Russian)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Chinese: {
-		Title: Chinese (中文)
+		Title: 中文 (Chinese)
 		Subtitle: Simplified
 	}
 
 	Portuguese: {
-		Title: Portuguese (Português)
+		Title: Português (Portuguese)
 		Subtitle: Brazil
 	}
 
 	Polish: {
-		Title: Polish (Polski)
+		Title: Polski (Polish)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
@@ -73,90 +78,98 @@ Cultures: {
 	}
 
 	Japanese: {
-		Title: Japanese (日本語)
+		Title: 日本語 (Japanese)
 		Subtitle: Hyoujungo
 	}
 
 	Korean: {
 		// Only display as 한국어 with correct LocalizedFont
 		// Otherwise Hangug-eo
-		Title: Korean ({0})
+		LocalizedFont: 한국어
+		DefaultFont: Hangug-eo
+		Title: "{0} (Korean)"
 		Subtitle: South Korea
 	}
 
 	TraditionalChinese: {
-		Title: Chinese (中文)
+		Title: 中文 (Chinese)
 		Subtitle: Traditional
 	}
 
 	Turkish: {
-		Title: Turkish (Türkçe)
+		Title: Türkçe (Turkish)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Thai: {
 		// Only display as ภาษาไทย with correct LocalizedFont
-		// Otherwise Phạsā Thaị
-		Title: Thai ({0})
+		// Otherwise Phasa Thai
+		LocalizedFont: ภาษาไทย
+		DefaultFont: Phasa Thai
+		Title: "{0} (Thai)"
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Ukrainian: {
-		Title: Ukrainian (Українська)
+		Title: Українська (Ukrainian)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	LatinAmericanSpanish: {
-		Title: Spanish (Español)
+		Title: Español (Spanish)
 		Subtitle: Standard Latin American
 	}
 
 	Czech: {
-		Title: Czech (Čeština)
+		Title: Čeština (Czech)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Hungarian: {
-		Title: Hungarian (Magyar)
+		Title: Magyar (Hungarian)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	PortugalPortuguese: {
-		Title: Portuguese (Português)
+		Title: Português (Portuguese)
 		Subtitle: Portugal
 	}
 
 	Swedish: {
-		Title: Swedish (Svenska)
+		Title: Svenska (Swedish)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Dutch: {
-		Title: Dutch (Nederlands)
+		Title: Nederlands (Dutch)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Danish: {
-		Title: Danish (Dansk)
+		Title: Dansk (Danish)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	// Only display as Tiếng Việt with correct LocalizedFont
 	// Otherwise Tieng Viet
-	Vietnamese.Title: Vietnamese ({0})
+	Vietnamese: {
+		LocalizedFont: Tiếng Việt
+		DefaultFont: Tieng Viet
+		Title: "{0} (Vietnamese)"
+	}
 
 	Finnish: {
-		Title: Finnish (Suomi)
+		Title: Suomi (Finnish)
 		Subtitle: Kirjakieli
 	}
 
 	Romanian: {
-		Title: Romanian (Romanesc)
+		Title: Română (Romanian)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Indonesian: {
-		Title: Indonesian (Bahasa Indonesia)
+		Title: Bahasa Indonesia (Indonesian)
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 }
