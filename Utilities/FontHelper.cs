@@ -11,7 +11,40 @@ namespace MoreLocales.Utilities
     /// <summary>
     /// For CombatText, 0 is regular combat text (small), and 1 is crit combat text (larger)
     /// </summary>
-    public readonly record struct GameFonts(Asset<DynamicSpriteFont> ItemStack, Asset<DynamicSpriteFont> MouseText, Asset<DynamicSpriteFont> DeathText, Asset<DynamicSpriteFont>[] CombatText);
+    public readonly struct GameFonts(Asset<DynamicSpriteFont> itemStack, Asset<DynamicSpriteFont> mouseText, Asset<DynamicSpriteFont> deathText, Asset<DynamicSpriteFont>[] combatText)
+    {
+        public readonly Asset<DynamicSpriteFont> ItemStack = itemStack;
+        public readonly Asset<DynamicSpriteFont> MouseText = mouseText;
+        public readonly Asset<DynamicSpriteFont> DeathText = deathText;
+        public readonly Asset<DynamicSpriteFont>[] CombatText = combatText;
+        public readonly bool IsLoaded => ItemStack.IsLoaded && MouseText.IsLoaded && DeathText.IsLoaded && CombatText[0].IsLoaded && CombatText[1].IsLoaded;
+        public static Asset<DynamicSpriteFont> GetFont(string name, AssetRequestMode mode = AssetRequestMode.ImmediateLoad) => ModContent.Request<DynamicSpriteFont>($"MoreLocales/Assets/Fonts/{name}", mode);
+        public static GameFonts Create(string id, AssetRequestMode mode = AssetRequestMode.AsyncLoad)
+        {
+            return new
+            (
+                GetFont($"ItemStack-{id}", mode), GetFont($"MouseText-{id}", mode), GetFont($"DeathText-{id}", mode), [GetFont($"CombatText-{id}", mode), GetFont($"CritText-{id}", mode)]
+            );
+        }
+        /// <summary>
+        /// Forces the already loading font assets to load as if using <see cref="AssetRequestMode.ImmediateLoad"/>
+        /// </summary>
+        public void Nudge()
+        {
+            if (ItemStack.State == AssetState.Loading)
+                ItemStack.Wait();
+            if (MouseText.State == AssetState.Loading)
+                MouseText.Wait();
+            if (DeathText.State == AssetState.Loading)
+                DeathText.Wait();
+            for (int i = 0; i < CombatText.Length; i++)
+            {
+                var combatText = CombatText[i];
+                if (combatText.State == AssetState.Loading)
+                    combatText.Wait();
+            }
+        }
+    }
     public static class FontHelper
     {
         private static readonly GameFonts defaultFonts;
@@ -35,16 +68,8 @@ namespace MoreLocales.Utilities
             if (Main.dedServ)
                 return;
 
-            static Asset<DynamicSpriteFont> GetFont(string name) => ModContent.Request<DynamicSpriteFont>($"MoreLocales/Assets/Fonts/{name}", AssetRequestMode.ImmediateLoad);
-
-            japaneseFonts = new
-            (
-                GetFont("ItemStack-JP"), GetFont("MouseText-JP"), GetFont("DeathText-JP"), [GetFont("CombatText-JP"), GetFont("CritText-JP")]
-            );
-            koreanFonts = new
-            (
-                GetFont("ItemStack-KR"), GetFont("MouseText-KR"), GetFont("DeathText-KR"), [GetFont("CombatText-KR"), GetFont("CritText-KR")]
-            );
+            japaneseFonts = GameFonts.Create("JP");
+            koreanFonts = GameFonts.Create("KR");
         }
         public static void ResetFont(bool bypassForced = false)
         {
@@ -90,6 +115,8 @@ namespace MoreLocales.Utilities
         }
         private static void SwitchFontInner(GameFonts target)
         {
+            target.Nudge();
+
             FontAssets.ItemStack = target.ItemStack;
             FontAssets.MouseText = target.MouseText;
             FontAssets.DeathText = target.DeathText;
