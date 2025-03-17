@@ -17,6 +17,7 @@ namespace MoreLocales
         public override void PostSetupContent()
         {
             FontHelper.InitLocalizedFonts();
+            ExtraLocalesSupport.cachedVanillaCulture = LanguageManager.Instance.ActiveCulture.LegacyId;
             ExtraLocalesSupport.LoadCustomCultureData();
         }
         public override void Load()
@@ -78,6 +79,7 @@ namespace MoreLocales
         }
         public override void Unload()
         {
+            ExtraLocalesSupport.DoUnload();
             FontHelper.ResetFont(true);
             hook?.Dispose();
         }

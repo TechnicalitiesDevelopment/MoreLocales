@@ -17,6 +17,7 @@ namespace MoreLocales.Core
     {
         private const string customCultureDataName = "LocalizationPlusData.dat";
         private static CultureNamePlus loadedCulture = CultureNamePlus.Unknown;
+        internal static int cachedVanillaCulture = 1; // english by default
         public static readonly Dictionary<CultureNamePlus, GameCulture> extraCultures = [];
 
         [UnsafeAccessor(UnsafeAccessorKind.StaticField, Name = "_NamedCultures")]
@@ -31,7 +32,8 @@ namespace MoreLocales.Core
         void ILoadable.Load(Mod mod)
         {
             IL_LanguageManager.ReloadLanguage += AddFallbacks;
-            On_LanguageManager.SetLanguage_GameCulture += On_LanguageManager_SetLanguage_GameCulture;
+            On_LanguageManager.SetLanguage_GameCulture += SetCulture;
+            On_Main.SaveSettings += Save;
 
             var vanillaNamedCultures = GetNamedCultures();
 
@@ -50,7 +52,21 @@ namespace MoreLocales.Core
             }
         }
 
-        private void On_LanguageManager_SetLanguage_GameCulture(On_LanguageManager.orig_SetLanguage_GameCulture orig, LanguageManager self, GameCulture culture)
+        private static bool Save(On_Main.orig_SaveSettings orig)
+        {
+            // So, why do we need this?
+            // The game will actually save our custom culture by default, using GameCulture.Name, but it won't recognize it when loading, and revert back to English.
+            // First, we can save our custom culture data in our file.
+            SaveCustomCultureData();
+            // Second, we can revert the culture by ourselves before the game has the chance to save it.
+            RevertCustomCulture(false, out var customCulture);
+            bool result = orig();
+            // Then, bring it back (if settings are saved outside of game exit, this is necessary)
+            LanguageManager.Instance?.SetLanguage(customCulture);
+            return result;
+        }
+
+        private static void SetCulture(On_LanguageManager.orig_SetLanguage_GameCulture orig, LanguageManager self, GameCulture culture)
         {
             if (culture.TryGetLocalizedFont(out LocalizedFont font))
             {
@@ -59,6 +75,9 @@ namespace MoreLocales.Core
             else
             {
                 FontHelper.SwitchFont(LocalizedFont.Default);
+                // none of the vanilla cultures need a localized font so we can do this logic here to save 0.000004 nanoseconds
+                if (!culture.IsCustom())
+                    cachedVanillaCulture = culture.LegacyId;
             }
             orig(self, culture);
         }
@@ -144,36 +163,15 @@ namespace MoreLocales.Core
             LanguageManager.Instance.SetLanguage(extraCultures[loadedCulture]);
             CallSetTitle(Main.instance);
         }
-        #region mightnotbeneeded
-        private GameCulture On_GameCulture_FromLegacyId(On_GameCulture.orig_FromLegacyId orig, int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        private static GameCulture On_GameCulture_FromCultureName(On_GameCulture.orig_FromCultureName orig, GameCulture.CultureName name)
-        {
-            GameCulture possibleCulture = orig(name);
-
-            // if this culture is already valid then just return that culture
-            if (possibleCulture != GameCulture.DefaultCulture)
-                return possibleCulture;
-
-            if (!Enum.TryParse(((int)name).ToString(), out CultureNamePlus validExtraCulture))
-            {
-                return possibleCulture;
-            }
-            return extraCultures[validExtraCulture];
-
-        }
-        #endregion
-        void ILoadable.Unload()
+        private static void SaveCustomCultureData()
         {
             string pathToCustomCultureData = Path.Combine(Main.SavePath, customCultureDataName);
 
             void WriteFile()
             {
                 using var writer = new BinaryWriter(File.Open(pathToCustomCultureData, FileMode.OpenOrCreate));
-                writer.Write((byte)LanguageManager.Instance.ActiveCulture.LegacyId);
+                byte id = (byte)LanguageManager.Instance.ActiveCulture.LegacyId;
+                writer.Write(id);
             }
 
             if (!File.Exists(pathToCustomCultureData))
@@ -185,14 +183,28 @@ namespace MoreLocales.Core
                 File.WriteAllText(pathToCustomCultureData, "");
                 WriteFile();
             }
-
+        }
+        internal static void DoUnload()
+        {
+            SaveCustomCultureData();
             UnregisterCultures();
+        }
+        void ILoadable.Unload()
+        {
+
+        }
+        private static void RevertCustomCulture(bool setTitle, out GameCulture customCulture)
+        {
+            customCulture = LanguageManager.Instance.ActiveCulture;
+
+            LanguageManager.Instance.SetLanguage(cachedVanillaCulture);
+
+            if (setTitle)
+                CallSetTitle(Main.instance);
         }
         private static void UnregisterCultures()
         {
-            // TODO: Revert to previous vanilla culture instead of the default culture.
-            LanguageManager.Instance.SetLanguage(GameCulture.DefaultCulture);
-            CallSetTitle(Main.instance);
+            RevertCustomCulture(true, out _);
 
             extraCultures.Clear();
 

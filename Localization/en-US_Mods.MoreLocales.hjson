@@ -24,7 +24,11 @@ Configs: {
 Cultures: {
 	Common: {
 		StandardSubtitle: Standard
-		LocalizedFontUnavailable: This language cannot be used because it requires a font that is currently not in the mod. Please wait for the next update!
+		LocalizedFontUnavailable:
+			'''
+			This language cannot be used because it requires a font that is currently not in the mod.
+			Please wait for the next update!
+			'''
 	}
 
 	English: {
