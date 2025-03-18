@@ -34,23 +34,9 @@ namespace MoreLocales
             hook = newHook;
             hook.Apply();
 
-            // explanation:
-            // unload is too late because the mod's file is already closed. the method i run tries to reload language which crashes the game at this point.
-            // thought close would work. turns out close is also too late because other mods' mod files are already closed.
-            // so this is the only place where it actually works.
-            MethodInfo onlyFknMethodThatWorksForUnloadingCulturesAtTheCorrectPlace = typeof(ModContent).GetMethod("UnloadModContent", BindingFlags.Static | BindingFlags.NonPublic);
-            Hook newHook2 = new(onlyFknMethodThatWorksForUnloadingCulturesAtTheCorrectPlace, UnloadInCorrectPlace);
-            unloadHook = newHook2;
-            unloadHook.Apply();
-
             ExtraLocalesSupport.DoLoad();
         }
-        public delegate void UnloadModContentOrig();
-        private static void UnloadInCorrectPlace(UnloadModContentOrig orig)
-        {
-            ExtraLocalesSupport.DoUnload();
-            orig();
-        }
+
         private static void FixPeskyLegacyMarking(ILContext il)
         {
             Mod mod = ModContent.GetInstance<MoreLocales>();
@@ -98,6 +84,7 @@ namespace MoreLocales
         public override void Unload()
         {
             FontHelper.ResetFont(true);
+            ExtraLocalesSupport.DoUnload();
             hook?.Dispose();
             unloadHook?.Dispose();
         }

@@ -10,6 +10,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using MonoMod.Cil;
 using Mono.Cecil.Cil;
+using System.Threading;
 
 namespace MoreLocales.Core
 {
@@ -28,6 +29,9 @@ namespace MoreLocales.Core
 
         [UnsafeAccessor(UnsafeAccessorKind.Method, Name = "SetTitle")]
         public static extern void CallSetTitle(Main instance);
+
+        [UnsafeAccessor(UnsafeAccessorKind.Method, Name = "set_ActiveCulture")]
+        public static extern void SetActiveCulture(LanguageManager instance, GameCulture culture);
 
         internal static void DoLoad()
         {
@@ -144,7 +148,17 @@ namespace MoreLocales.Core
                 MonoModHooks.DumpIL(mod, il);
             }
         }
-
+        /// <summary>
+        /// Sets the game's language without calling <see cref="LanguageManager.SetLanguage(GameCulture)"/>
+        /// </summary>
+        /// <param name="culture"></param>
+        public static void SetLanguageSoft(GameCulture culture)
+        {
+            var lang = LanguageManager.Instance;
+            SetActiveCulture(lang, culture);
+            Thread.CurrentThread.CurrentCulture = culture.CultureInfo;
+            Thread.CurrentThread.CurrentUICulture = culture.CultureInfo;
+        }
         public static void LoadCustomCultureData()
         {
             string pathToCustomCultureData = Path.Combine(Main.SavePath, customCultureDataName);
@@ -189,20 +203,23 @@ namespace MoreLocales.Core
             SaveCustomCultureData();
             UnregisterCultures();
         }
-        private static void RevertCustomCulture(bool setTitle, out GameCulture customCulture)
+        private static void RevertCustomCulture(bool setTitle, out GameCulture customCulture, bool soft = false)
         {
             customCulture = LanguageManager.Instance.ActiveCulture;
             if (!customCulture.IsCustom())
                 return;
 
-            LanguageManager.Instance.SetLanguage(cachedVanillaCulture);
+            if (soft)
+                SetLanguageSoft(GameCulture.FromLegacyId(cachedVanillaCulture));
+            else
+                LanguageManager.Instance.SetLanguage(cachedVanillaCulture);
 
             if (setTitle)
                 CallSetTitle(Main.instance);
         }
         private static void UnregisterCultures()
         {
-            RevertCustomCulture(true, out _);
+            RevertCustomCulture(true, out _, true);
 
             extraCultures.Clear();
 
