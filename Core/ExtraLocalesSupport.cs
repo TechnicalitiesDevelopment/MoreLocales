@@ -192,6 +192,8 @@ namespace MoreLocales.Core
         private static void RevertCustomCulture(bool setTitle, out GameCulture customCulture)
         {
             customCulture = LanguageManager.Instance.ActiveCulture;
+            if (!customCulture.IsCustom())
+                return;
 
             LanguageManager.Instance.SetLanguage(cachedVanillaCulture);
 
