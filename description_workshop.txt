@@ -18,5 +18,7 @@ Have you ever been disappointed in the lack of language variety Terraria offers 
 [b]Notes[/b]
 The mod currently does not include localizations for vanilla content, however, if you'd like to help out with making some translations, you can join the Discord or make direct contributions through GitHub.
 
+If you're seeing this mod right after the release and you're a user, please realize that the mod does basically nothing other than give you a pretty language menu until other modders add the appropriate localizations into their mods, and until people contribute translations for vanilla content to this mod.
+
 [quote=tModLoader]
 Developed By qAngel[/quote]
