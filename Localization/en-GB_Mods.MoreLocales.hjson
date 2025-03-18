@@ -5,8 +5,8 @@ Configs: {
 		// DisplayName: Client Side Config
 
 		ForcedFont: {
-			// Label: Force Localized Font Type
-			// Tooltip: Forces the game to use this type of localized font, disregarding the current language settings. This is {$Configs.LocalizedFont.None.Label} by default, which means the font will dynamically change with the chosen language.
+			Label: Force Localised Font Type
+			Tooltip: Forces the game to use this type of localised font, disregarding the current language settings. This is {$Configs.LocalizedFont.None.Label} by default, which means the font will dynamically change with the chosen language.
 		}
 	}
 
