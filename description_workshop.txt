@@ -1,0 +1,22 @@
+[url=https://discord.gg/4PDwPnz9Jm]Discord Server[/url] | [url=https://github.com/Angeltrisi/MoreLocales]GitHub (Source Code)[/url]
+
+[h1]Localization+[/h1]
+
+Have you ever been disappointed in the lack of language variety Terraria offers by default? Localization+'s purpose is to quench your thirst for linguistic understanding!
+
+[h2]Features[/h2]
+
+• 18 new localizable languages (full list [url=https://github.com/Angeltrisi/MoreLocales/blob/master/README.md]here[/url])
+
+• A brand new Language menu
+
+[i]Like this mod? Like this mod![/i]
+
+[img]https://i.imgur.com/ki1CPZe.gif[/img]
+
+[hr][/hr]
+[b]Notes[/b]
+The mod currently does not include localizations for vanilla content, however, if you'd like to help out with making some translations, you can join the Discord or make direct contributions through GitHub.
+
+[quote=tModLoader]
+Developed By qAngel[/quote]

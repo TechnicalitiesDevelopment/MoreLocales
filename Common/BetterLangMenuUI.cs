@@ -255,7 +255,8 @@ namespace MoreLocales.Common
 
             Texture2D flag = _flagAtlas.Value;
             Vector2 flagOffset = new(6f);
-            spriteBatch.Draw(flag, pos + flagOffset, _flagFrame, drawColor, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+            Vector2 flagDrawPos = pos + flagOffset;
+            spriteBatch.Draw(flag, flagDrawPos, _flagFrame, drawColor, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
 
             DynamicSpriteFont font = FontAssets.MouseText.Value;
 
@@ -267,7 +268,7 @@ namespace MoreLocales.Common
                 float subSize = 0.85f;
                 string subtitle = _cultureSubtitle.Value;
                 float xSize = font.MeasureString(subtitle).X * subSize;
-                Color drawSubColor = usable ? Color.LightGray : Color.DarkGray;
+                Color drawSubColor = Color.Lerp(drawColor, Color.Black, 0.25f);
                 ChatManager.DrawColorCodedStringWithShadow(spriteBatch, font, subtitle, center - new Vector2(xSize * 0.5f, 0f), drawSubColor, 0f, Vector2.Zero, new Vector2(subSize));
             }
             string title = needsLocalizedFontTitle ? _cultureTitle.Format(Language.GetTextValue($"{_culturesKey}.{_culture.FullName()}.{(FontHelper.IsUsingAppropriateFont(_culture) ? "LocalizedFont" : "DefaultFont")}")) : _cultureTitle.Value;
@@ -275,7 +276,10 @@ namespace MoreLocales.Common
             ChatManager.DrawColorCodedStringWithShadow(spriteBatch, font, title, center - new Vector2(xSizeTitle * 0.5f, sub ? 18f : 10f), drawColor, 0f, Vector2.Zero, Vector2.One);
 
             string cultureName = $"({_culture.Name})";
-            ChatManager.DrawColorCodedStringWithShadow(spriteBatch, font, cultureName, pos + new Vector2(8f, 32f), drawColor, 0f, Vector2.Zero, new Vector2(0.75f));
+            float flagCenterX = flagDrawPos.X + (flag.Width * 0.5f);
+            float cultureScale = 0.75f;
+            float cultureSizeX = font.MeasureString(cultureName).X * cultureScale;
+            ChatManager.DrawColorCodedStringWithShadow(spriteBatch, font, cultureName, new Vector2(flagCenterX - cultureSizeX * 0.5f, pos.Y + 32f), drawColor, 0f, Vector2.Zero, new Vector2(cultureScale));
         }
     }
     public class BackButton : UIElement

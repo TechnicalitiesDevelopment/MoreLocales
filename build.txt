@@ -1,4 +1,5 @@
 displayName = Localization Plus
 author = qAngel
 side = Client
-version = 0.1
+buildIgnore = *.csproj, *.user, obj\*, bin\*, lib\*, .vs\*, FontBases\*
+version = 0.1.0.0

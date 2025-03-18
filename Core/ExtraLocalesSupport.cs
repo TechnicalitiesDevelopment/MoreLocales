@@ -13,7 +13,7 @@ using Mono.Cecil.Cil;
 
 namespace MoreLocales.Core
 {
-    public class ExtraLocalesSupport : ILoadable
+    public class ExtraLocalesSupport
     {
         private const string customCultureDataName = "LocalizationPlusData.dat";
         private static CultureNamePlus loadedCulture = CultureNamePlus.Unknown;
@@ -29,7 +29,7 @@ namespace MoreLocales.Core
         [UnsafeAccessor(UnsafeAccessorKind.Method, Name = "SetTitle")]
         public static extern void CallSetTitle(Main instance);
 
-        void ILoadable.Load(Mod mod)
+        internal static void DoLoad()
         {
             IL_LanguageManager.ReloadLanguage += AddFallbacks;
             On_LanguageManager.SetLanguage_GameCulture += SetCulture;
@@ -188,10 +188,6 @@ namespace MoreLocales.Core
         {
             SaveCustomCultureData();
             UnregisterCultures();
-        }
-        void ILoadable.Unload()
-        {
-
         }
         private static void RevertCustomCulture(bool setTitle, out GameCulture customCulture)
         {

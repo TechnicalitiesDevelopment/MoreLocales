@@ -32,6 +32,8 @@ namespace MoreLocales
             ILHook newHook = new(peskyLegacyMarker, FixPeskyLegacyMarking);
             hook = newHook;
             hook.Apply();
+
+            ExtraLocalesSupport.DoLoad();
         }
         private static void FixPeskyLegacyMarking(ILContext il)
         {
