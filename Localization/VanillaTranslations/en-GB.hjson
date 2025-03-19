@@ -208,7 +208,7 @@ tModLoader: {
 	// ModConfigClientSide: Client Side Config
 	// ModConfigAdd: Add
 	// ModConfigRemove: Remove
-	// ModConfigInitialize: Initialize
+	ModConfigInitialize: Initialise
 	// ModConfigClear: Clear
 	// ModConfigExpand: Expand
 	// ModConfigCollapse: Collapse
@@ -911,7 +911,7 @@ tModLoader: {
 	// TagsLanguage_Chinese: Simplified Chinese
 	// TagsLanguage_Portuguese: Brazilian Portuguese
 	// TagsLanguage_Polish: Polish
-	// TagsLanguage_Description: This mod is localized for this language.
+	TagsLanguage_Description: This mod is localised for this language.
 	// TagsLanguage_EnglishDescription: "{$TagsLanguage_Description}"
 	// TagsLanguage_SpanishDescription: "{$TagsLanguage_Description}"
 	// TagsLanguage_FrenchDescription: "{$TagsLanguage_Description}"
@@ -1225,7 +1225,7 @@ Mods: {
 			// Elfinlocks_Legs.DisplayName: Elfinlocks' Legs
 			// Frosty_Hat.DisplayName: Frosty's Hat
 			// Frosty_Hoodie.DisplayName: Frosty's Hoodie
-			// Frosty_Pants.DisplayName: Frosty's Pants
+			Frosty_Pants.DisplayName: Frosty's Trousers
 			// Glory_Body.DisplayName: Glory's Body
 			// Glory_Head.DisplayName: Glory's Head
 			// Glory_Legs.DisplayName: Glory's Legs
@@ -2609,7 +2609,7 @@ BestiaryGirlChatter: {
 	// Chatter_4: My older bro calls me a lycanthrope. It means I'm like, part animal or something. He'd know, though, because he spends all his time outside!
 	// Chatter_5: I love animals, like, a lot! I tried to pet this weird looking fox one time, he sooo bit me, and now I became like one! Rad!
 	// Chatter_6: Staahp pulling on my tail, bro, it's totally real, and like...totally hurts when you pull on it!
-	// Chatter_7: Huh?! No, {Stylist} didn't dye my hair. It's naturally this color! It was like, dark brown before I was bitten, though!
+	 Chatter_7: Huh?! No, {Stylist} didn't dye my hair. It's naturally this colour! It was like, dark brown before I was bitten, though!
 	// Chatter_8: Oh, THESE ears? Haha, totes better to hear you with, my dear!
 	// Chatter_9: This one time, at critter camp, I woke up one morning and everything was torn apart! Like, wow, how did I sleep through THAT?!
 	// Chatter_10: Wow, like, I've never seen a full moon. For some reason, it's like I pass out every time one's around!
@@ -2623,16 +2623,16 @@ BestiaryGirlLycantropeChatter: {
 
 PrincessChatter: {
 	// Chatter_1: I really appreciate all the good you've done for this land! Thank you!
-	// Chatter_2: Goblins are so cute! They are short, and have those little pointy ears, and they come in different colors!
+	Chatter_2: Goblins are so cute! They are short, and have those little pointy ears, and they come in different colours!
 	// Chatter_3: "{?GolemDefeated}I tried to pet a lihzahrd once. Um... they didn't mind at all!"
 	// Chatter_4: "{?MartiansDefeated}I wish the martians were a little nicer. Our world doesn't normally get visitors!"
 	// Chatter_5: Like my dress? Gee, thanks! Just sewed it.
 	// Chatter_6: I am so fabulously grateful for my subjects!
-	// Chatter_7: "{?FrostLegionDefeated}Worry not, concerned citizen! I am well aware of the organized crime problem among snowfolk."
+	Chatter_7: "{?FrostLegionDefeated}Worry not, concerned citizen! I am well aware of the organised crime problem among snowfolk."
 	// Chatter_8: Hmm... do you think {Pirate} will be able to redeem some of his old seafaring friends, as well?
 	// Chatter_9: "{?IceQueenDefeated}Diplomacy did not work so well with the Ice Queen, I'm afraid. She's rather cold-hearted! He he!"
 	// Chatter_10: "{?PumpkingDefeated}The Pumpking can be rather two-faced, it seems. I shall not give up on peace with his spooky people!"
-	// Chatter_11: "Pink is the best color anyone could ask for! "
+	Chatter_11: "Pink is the best colour anyone could ask for! "
 	// Chatter_12: "{?DukeFishronDefeated}I once met with a Duke on the beach. He looked kinda fishy, and lacked good manners!"
 	// Chatter_13: "Um... being a princess can be so uneventful sometimes, so I took up many hobbies! "
 	// Chatter_14: I'm so happy to finally travel the world, and meet new people!
@@ -2894,12 +2894,12 @@ AnglerQuestText: {
 
 		(Caught in Underground & Caverns)
 		''' */
-	/* Quest_MirageFish:
+	 Quest_MirageFish:
 		'''
-		There's some interesting critters to be found in the deeper Hallows, I tell you! They glow this crazy purple color and it messes with my eyes! It's totally wild, so I want you to catch a fish like that for me!
+		There's some interesting critters to be found in the deeper Hallows, I tell you! They glow this crazy purple colour and it messes with my eyes! It's totally wild, so I want you to catch a fish like that for me!
 
 		(Caught in Underground Hallow)
-		''' */
+		'''
 	/* Quest_MutantFlinxfin:
 		'''
 		What's white and tan and fluffy and lives in a frozen underground lake? A mutant flinxfin! I wasn't telling a joke, you know, there really is a mutated variety of Flinx that is more adapted to an aquatic lifestyle! I want it to adapt to my fishbowl, so make sure that happens!
@@ -2912,12 +2912,12 @@ AnglerQuestText: {
 
 		(Caught in Surface Tundra)
 		''' */
-	/* Quest_Pixiefish:
+	 Quest_Pixiefish:
 		'''
-		There's a really really rare type of pixie that's born with so many wings that it can't actually fly! It swims with the fishes in the lakes surrounded by that blue colored grass. My fish tank needs a lamp, so I want you to catch me that pixie!
+		There's a really really rare type of pixie that's born with so many wings that it can't actually fly! It swims with the fishes in the lakes surrounded by that blue coloured grass. My fish tank needs a lamp, so I want you to catch me that pixie!
 
 		(Caught in Surface Hallow)
-		''' */
+		'''
 	/* Quest_Spiderfish:
 		'''
 		I saw a fish that had eight legs! Nope! Not happening! You're fishing it for me, so it's not alive when I hold it! That's the last time I go fishing so deep in the cavern!
@@ -2984,12 +2984,12 @@ AnglerQuestText: {
 
 		(Caught in Ocean)
 		''' */
-	/* Quest_Clownfish:
+	 Quest_Clownfish:
 		'''
-		I saw this bright orange and colorful fish by the ocean, and it was looking around frantically as though it was seeking a lost family member! Go catch it for me, so that another one will show up looking frantically for him instead!
+		I saw this bright orange and colourful fish by the ocean, and it was looking around frantically as though it was seeking a lost family member! Go catch it for me, so that another one will show up looking frantically for him instead!
 
 		(Caught in Ocean)
-		''' */
+		'''
 	/* Quest_DemonicHellfish:
 		'''
 		I hear in the underworld, that the King of all demons is actually a fish! Just imagine the absolute power I would have if you caught it for me!
@@ -3194,7 +3194,7 @@ GoblinTinkererSpecialText: {
 	// Windy2: Now would be a great time to tinker a pinwheel accessory!
 	// Storm1: I'm working on an invention that will harness the energy being released around us!
 	// Storm2: Most goblins hate thunderstorms. Probably because they carry so many spiky balls.
-	// Rain1: All this rainfall makes it hard to see. I should tinker my goggles with a pair of windshield wipers.
+	Rain1: All this rainfall makes it hard to see. I should tinker my goggles with a pair of windscreen wipers.
 	// Rain2: Humans are a lot taller than goblins. When it floods, we are always in big trouble!
 }
 
@@ -3235,7 +3235,7 @@ MechanicSpecialText: {
 	// Windy2: My wires are getting tangled in this cyclone. Watch where you step!
 	// Storm1: Great! There goes another pump. When will the lightning stop frying my equipment?!
 	// Storm2: Don't go outside right now while holding any of my products, you'll attract an unwanted dose of electrical power!
-	// Rain1: If it doesn't stop raining, my wrench is going to get all rusty!
+	Rain1: If it doesn't stop raining, my spanner is going to get all rusty!
 	// Rain2: Oh Fudge! Shorted out another outlet! I hate this weather.
 }
 
@@ -3264,21 +3264,21 @@ SteampunkerSpecialText: {
 }
 
 DyeTraderSpecialText: {
-	// HasPlant_0: Brilliant, my dear! You have brought me an exquisite sample of the world's beautiful colors and aroma. In exchange, you may take this special bottle of dye.
+	HasPlant_0: Brilliant, my dear! You have brought me an exquisite sample of the world's beautiful colours and aroma. In exchange, you may take this special bottle of dye.
 	// HasPlant_1: You bring me a beautiful, rare flower... yes, yes? Take this bottle of special dye for your troubles, friend!
 	// HasPlant_2: Fantabulous, wonderful friend! With this delicate specimen, I may mix the most amazing dyes {WorldName} has ever seen! You may take this one right away!
 	// NoPlant_0: Oh no no, this will not do.  For these money is no good, you must return to me with a rare specimen of a plant!
 	// NoPlant_1: You think you can pull a fast one on {DyeTrader}, I don't think so! I only take the rarest of flowers for these special bottles!
 	// NoPlant_2: These dye bottles? Sorry dear friend, these don't take coin. I only take the most precious and rare of flora in exchange for one of this!
-	// Party: I truly love parties, so many beautiful colors and happy people.
+	Party: I truly love parties, so many beautiful colours and happy people.
 	// Graveyard1: My, my... this is no good. The putrid surroundings are dulling my dye petals.
 	// Graveyard2: You think this a place worthy of my presence? So drab, so dull, these people are literally below me.
-	// Windy1: Marvelous! The wind brings me petals of all colors!
+	Windy1: Marvelous! The wind brings me petals of all colours!
 	// Windy2: Give me a moment, my dear. I must secure my palette from the gusty gales!
 	// Storm1: Egads! I loathe these bothersome storms!
 	// Storm2: Please, do tell when the wrath of nature has ended out there!
 	// Rain1: Too much water dilutes my selection! This rain better pass, soon!
-	// Rain2: No, no, these robes cannot get wet! They will lose their vibrant color!
+	Rain2: No, no, these robes cannot get wet! They will lose their vibrant colour!
 }
 
 PartyGirlSpecialText: {
@@ -3316,11 +3316,11 @@ CyborgSpecialText: {
 PainterSpecialText: {
 	// Party: I tried having a paintball fight, but everyone wanted food and decorations instead.
 	// Graveyard1: I paint walls and furniture, not bones! It isn't Dia de Muertos!
-	// Graveyard2: What a dreary place... it sure could use a splash of color, huh?
+	Graveyard2: What a dreary place... it sure could use a splash of colour, huh?
 	// Windy1: Feel that draft coming through? It's wafting paint fumes all over the place.
 	// Windy2: This wind storm just blew all the fresh paint right off the wall!
-	// Storm1: When the thunder rolls, and the lightning strikes... it really brings out the colors on the furniture.
-	// Storm2: Blink and you'll miss it. The brightest colors stand out when the lightning flashes.
+	Storm1: When the thunder rolls, and the lightning strikes... it really brings out the colours on the furniture.
+	Storm2: Blink and you'll miss it. The brightest colours stand out when the lightning flashes.
 	// Rain1: Rain is my worst nightmare. It literally rinses out all my hard work!
 	// Rain2: I painted a mural on this wall just a moment ago. Shoulda bought a weather radio!
 }
@@ -3570,7 +3570,7 @@ TownNPCMood_Nurse: {
 	// LoveNPC: What? {NPCName}? I don't have a crush! I don't! Shut up!
 	// DislikeNPC: I don't like {NPCName} that much, kinda weirds me out.
 	// HateNPC: Oh, I hate treating {NPCName}, so difficult!
-	// LikeNPC_Princess: I accidentally dislocated {NPCName}'s shoulder during a check-up, and she apologized to ME for the inconvenience!
+	LikeNPC_Princess: I accidentally dislocated {NPCName}'s shoulder during a check-up, and she apologised to ME for the inconvenience!
 }
 
 TownNPCMood_Painter: {
@@ -3585,7 +3585,7 @@ TownNPCMood_Painter: {
 	// DislikeBiome: Why don't I like {BiomeName}? Because it's borin'. Green? Brown? That's it?
 	// HateBiome: Woah, {BiomeName} is disgusting, get me outta here!
 	// LikeNPC: "{NPCName} and I like the same shade of pink! That's a friend, in my book!"
-	// LoveNPC: I would really love to paint {NPCName}... because of the vivid colors, of course!
+	LoveNPC: I would really love to paint {NPCName}... because of the vivid colours, of course!
 	// DislikeNPC: "{NPCName} is just too bland for my tastes, I dislike associating with dull types."
 	// HateNPC: I hate being around {NPCName}.
 	// LikeNPC_Princess: "{NPCName} commissioned me to paint a mural on the roof of her throne room!"
@@ -3594,17 +3594,17 @@ TownNPCMood_Painter: {
 TownNPCMood_DyeTrader: {
 	// Content: Me? I'm fine, I'm fine.
 	// NoHome: No no, this will not do, need a place to call mine.
-	// FarFromHome: You think I can make brilliant colors so far from my shop? Don't think so!
-	// DislikeCrowded: I truly dislike crowds, unless of course they are here for my vivid colors!
+	FarFromHome: You think I can make brilliant colours so far from my shop? Don't think so!
+	DislikeCrowded: I truly dislike crowds, unless of course they are here for my vivid colours!
 	// HateCrowded: When I'm not doing business, I'd much rather be alone, yes? I hate feeling crammed in!
 	// LoveSpace: My dear, this palace is quiet enough to sleep like a sultan!
 	// LikeBiome: Ahh, {BiomeName} is really nice, reminds me of my home town, I like it very much so!
 	// LoveBiome: I love {BiomeName}.
 	// DislikeBiome: Oh no, {BiomeName} does not inspire me, don't like, don't like.
-	// HateBiome: Gross, {BiomeName} is draining the color from my palettes!
+	HateBiome: Gross, {BiomeName} is draining the colour from my palettes!
 	// LikeNPC: "{NPCName} has good eyes for vividness and business, I like it, yes?"
 	// LoveNPC: I love being around {NPCName}.
-	// DislikeNPC: Oh dear, that {NPCName} has no sense of color or style, I don't like.
+	DislikeNPC: Oh dear, that {NPCName} has no sense of colour or style, I don't like.
 	// HateNPC: I truly, truly hate how unsavory {NPCName} can be.
 	// LikeNPC_Princess: The hues on {NPCName}'s dress are deeper and more vivid than I've ever seen in my entire life!
 }
@@ -4015,7 +4015,7 @@ TownNPCMood_Princess: {
 	// LoveNPC_SantaClaus: "{NPCName} is so jolly, I just want to give him a gift!"
 	// LoveNPC_Truffle: "{NPCName} is a really fun guy!"
 	// LoveNPC_Steampunker: "{NPCName} is my favorite tea time partner!"
-	// LoveNPC_DyeTrader: "{NPCName} always helps me choose the best color dresses!"
+	LoveNPC_DyeTrader: "{NPCName} always helps me choose the best colour dresses!"
 	// LoveNPC_PartyGirl: "{NPCName} is always the life of the party!"
 	// LoveNPC_Cyborg: "{NPCName} is so cool, he seems to know everything!"
 	// LoveNPC_Painter: "{NPCName} really brightens up this place with his art!"
@@ -4238,10 +4238,10 @@ UI: {
 	// LightMode_White: "{$LegacyMenu.56}"
 	// LightMode_Retro: "{$LegacyMenu.57}"
 	// LightMode_Trippy: "{$LegacyMenu.58}"
-	// CopyColorToClipboard: Copy color code to clipboard
-	// PasteColorFromClipboard: Paste color code from clipboard
-	// RandomizeColor: Randomize color
-	// RandomizePlayer: Randomize player
+	CopyColorToClipboard: Copy colour code to clipboard
+	PasteColorFromClipboard: Paste colour code from clipboard
+	RandomizeColor: Randomise colour
+	RandomizePlayer: Randomise player
 	// CopyPlayerToClipboard: Copy player template to clipboard
 	// PastePlayerFromClipboard: Paste player template from clipboard
 	// PlayerNameSlot: Name:
@@ -4280,10 +4280,10 @@ UI: {
 	// Author: by {0}
 	// WorldCreationName: Name:
 	// WorldCreationNameEmpty: <Empty>
-	// WorldCreationRandomizeNameDescription: Randomize your world's name.
+	WorldCreationRandomizeNameDescription: Randomise your world's name.
 	// WorldCreationSeed: Seed:
 	// WorldCreationSeedEmpty: <Leave Blank For Random>
-	// WorldCreationRandomizeSeedDescription: Randomize your world's seed.
+	WorldCreationRandomizeSeedDescription: Randomise your world's seed.
 	// WorldCreationSize: Size:
 	// WorldCreationDifficulty: Difficulty:
 	// WorldCreationEvil: Evil:
@@ -4767,12 +4767,12 @@ DeathTextGeneric: {
 	// Macerated: "{0} was macerated"
 	// Exsanguinated: "{0} was exsanguinated"
 	// BoneZone: "{0} was sent to the bone zone"
-	// Lobotomy: "{0} was spontaneously lobotomized"
+	Lobotomy: "{0} was spontaneously lobotomised"
 	// Pulp: "{0} was pressed into a succulent pulp"
 	// SadMeat: "{0} was ground into sad meat"
 	// Shattered: "{0}'s bones were shattered"
 	// MonsterFood: "{0} was turned into monster food"
-	// Remodeled: "{0} had their home remodeled"
+	Remodeled: "{0} had their home remodelled"
 	// LostBlood: "{0} was voluntold to donate blood"
 	// PeeledCap: "{0} had their cap peeled back"
 	// TopKnot: "{0}'s top knot was carved off"
@@ -4834,7 +4834,7 @@ DeathText: {
 	// TriedToEscape: "{0} tried to escape."
 	// WasLicked_1: "{0} was licked."
 	// WasLicked_2: "{0} got to 1st base with the Wall of Flesh!"
-	// Teleport_1: "{0} didn't materialize"
+	Teleport_1: "{0} didn't materialise"
 	// Teleport_2_Male: "{0}'s legs appeared where their head should be."
 	// Teleport_2_Female: "{0}'s legs appeared where their head should be."
 	// Slain: "{0} was slain..."
@@ -5044,7 +5044,7 @@ Achievements: {
 	// GELATIN_WORLD_TOUR_Name: Gelatin World Tour
 	// GELATIN_WORLD_TOUR_Description: Defeat every type of slime there is!
 	// FASHION_STATEMENT_Name: Fashion Statement
-	// FASHION_STATEMENT_Description: Equip armor or vanity clothing in all three social slots.
+	FASHION_STATEMENT_Description: Equip armour or vanity clothing in all three social slots.
 	// VEHICULAR_MANSLAUGHTER_Name: Vehicular Manslaughter
 	// VEHICULAR_MANSLAUGHTER_Description: Defeat an enemy by running it over with a minecart.
 	// BULLDOZER_Name: Bulldozer
@@ -5106,7 +5106,7 @@ Achievements: {
 	// YOU_CAN_DO_IT_Name: You Can Do It!
 	// YOU_CAN_DO_IT_Description: Survive your character's first full night.
 	// MATCHING_ATTIRE_Name: Matching Attire
-	// MATCHING_ATTIRE_Description: Equip armor in all three armor slots: head, chest, and feet.
+	MATCHING_ATTIRE_Description: Equip armour in all three armour slots: head, chest, and feet.
 	// BEHIND_THE_MASK_Name: Behind The Mask
 	// BEHIND_THE_MASK_Description: Slay the Insane Cultist, a mad magician with powerful spells.
 	// DAVY_JONES_LOCKER_Name: Davy Jones' Locker
@@ -5375,7 +5375,7 @@ RandomWorldName_Adjective: {
 	// Cloudy: Cloudy
 	// Clumsy: Clumsy
 	// Cold: Cold
-	// Colorful: Colorful
+	Colorful: Colourful
 	// Combative: Combative
 	// Comfortable: Comfortable
 	// Comical: Comical
@@ -5897,7 +5897,7 @@ RandomWorldName_Adjective: {
 	// Vanilla: Vanilla
 	// Sus: Sus
 	// Woke: Woke
-	// Canceled: Canceled
+	Canceled: Cancelled
 	// BobSaget: Bob Saget's
 	// Fleek: Fleek
 	// Dope: Dope
@@ -6168,7 +6168,7 @@ RandomWorldName_Location: {
 	// Gully: Gully
 	// Gutter: Gutter
 	// Hamlet: Hamlet
-	// Harbor: Harbor
+	Harbor: Harbour
 	// Haven: Haven
 	// Heart: Heart
 	// Heaven: Heaven
@@ -6413,7 +6413,7 @@ RandomWorldName_Location: {
 	// Virus: Virus
 	// DLC: DLC
 	// Egg: Egg
-	// Labor: Labor
+	Labor: Labour
 	// Dollop: Dollop
 	// Finger: Finger
 	// Throat: Throat
@@ -6585,7 +6585,7 @@ RandomWorldName_Noun: {
 	// Bloodshed: Bloodshed
 	// Blossoms: Blossoms
 	// Bodies: Bodies
-	// Odor: Odor
+	Odor: Odour
 	// Bone: Bone
 	// Spurs: Spurs
 	// Boots: Boots
@@ -6614,7 +6614,7 @@ RandomWorldName_Noun: {
 	// Butterflies: Butterflies
 	// Cacti: Cacti
 	// Calmness: Calmness
-	// Candy: Candy
+	Candy: Sweets
 	// Care: Care
 	// Carnage: Carnage
 	// Carrion: Carrion
@@ -6780,7 +6780,7 @@ RandomWorldName_Noun: {
 	// Frost: Frost
 	// Fruit: Fruit
 	// Gangsters: Gangsters
-	// Garbage: Garbage
+	Garbage: Rubbish
 	// GarlicBread: Garlic Bread
 	// Gears: Gears
 	// Gel: Gel
@@ -7467,7 +7467,7 @@ CreditsRollCategory_Sound: {
 }
 
 CreditsRollCategory_Dialog: {
-	// 1: Dialog
+	1: Dialogue
 	// 2: James “Lazure” Hayes
 	// 3: Jeremy “Blue” Guerrette
 	// 4: Dustin “Splugen” Gunter
@@ -7662,7 +7662,7 @@ LoadingTips_Default: {
 	// 45: If you store your Coins in a Chest or Piggy Bank, you will be less likely to lose them.
 	// 46: To craft potions, place a Bottle on a Table to make an Alchemy Station. Double, double, toil and trouble!
 	// 47: If your house doesn't have background walls, monsters will be able to spawn inside.
-	// 48: Wearing a full set of armor crafted from the same material gives you an extra bonus.
+	48: Wearing a full set of armour crafted from the same material gives you an extra bonus.
 	// 49: Build a Furnace to craft metal bars out of ore.
 	// 50: You can harvest Cobwebs and turn them into Silk. You can use Silk to craft beds, sofas, and more!
 	// 51: You can buy Wires from the Mechanic and use them to create traps, pumping systems, or other elaborate devices.
@@ -7697,7 +7697,7 @@ LoadingTips_Default: {
 	// 81: The Arms Dealer knows more about guns than anyone. If you find one, he might move in.
 	// 82: The Mechanic got lost in the Dungeon. You'll have to help her out if you want her to move in.
 	// 83: Once you use a Life Crystal, a Nurse might move in! Speak to her for healing at any time . . . for a price, of course.
-	// 84: If you ever want to get stylish, try dyes! The Dye Trader can help you turn some materials into new dye colors.
+	84: If you ever want to get stylish, try dyes! The Dye Trader can help you turn some materials into new dye colours.
 	// 85: The Tavernkeep is a guest from a faraway land called Etheria.
 	// 86: If you need a new haircut, go check out a nearby Spider Biome. Stylists always end up lost in them!
 	// 87: Regular Wood and Stone not vibrant enough for you? A Painter will move in and sell paints if enough townsfolk move in.
@@ -7737,7 +7737,7 @@ LoadingTips_GamePad: {
 	// 3: If your Inventory is full, you can press {InputTriggerUI_Trash} to send items to the Trash.
 	// 4: When speaking to a vendor, you can sell items in your Inventory by pressing {InputTriggerUI_SellItem}.
 	// 5: You can remove Torches with {InputTrigger_InteractWithTile} or with a pickaxe.
-	// 6: In your Inventory, you can press {InputTrigger_QuickEquip} to equip items such as armor or accessories directly to a usable slot.
+	6: In your Inventory, you can press {InputTrigger_QuickEquip} to equip items such as armour or accessories directly to a usable slot.
 	// 7: Hold {InputTrigger_SmartSelect} to use Auto Select, a versatile feature that adapts to your environment. It will allow you to automatically hold your Torches in dark caves, Glowsticks when underwater, or even select the right tool for breaking something.
 	// 8: Press {InputTriggerUI_FavoriteItem} to Favorite an item. Favorited items can no longer be sold, thrown away, or dropped. No more accidentally losing your favorite items!
 	// 9: While navigating your Inventory, press {InputTriggerUI_BuildFromInventory} while highlighting a tool or block to build directly from your Inventory.
@@ -7754,7 +7754,7 @@ LoadingTips_Keyboard: {
 	// 2: If your Inventory is full, you can press {InputTriggerUI_Trash} and {InputTrigger_UseOrAttack} to send items to the Trash.
 	// 3: When speaking to a vendor, you can sell items in your Inventory by pressing {InputTriggerUI_Trash} and {InputTrigger_UseOrAttack}.
 	// 4: You can remove Torches with {InputTrigger_InteractWithTile} or with a pickaxe.
-	// 5: In your Inventory, you can press {InputTrigger_InteractWithTile} to equip items such as armor or accessories directly to a usable slot.
+	5: In your Inventory, you can press {InputTrigger_InteractWithTile} to equip items such as armour or accessories directly to a usable slot.
 	// 6: Hold {InputTrigger_SmartSelect} to use Auto Select, a versatile feature that adapts to your environment. It will allow you to automatically hold your Torches in dark caves, Glowsticks when underwater, or even select the right tool for breaking something.
 	// 7: Press {InputTriggerUI_FavoriteItem} and {InputTrigger_UseOrAttack} to Favorite an item. Favorited items can no longer be sold, thrown away, or dropped. No more accidentally losing your favorite items!
 	// 8: You can assign or remove NPCs from houses! From the housing interface, {InputTrigger_UseOrAttack} to assign them to a home, and {InputTrigger_InteractWithTile} their banner to kick them out!
@@ -8221,7 +8221,7 @@ BuffName: {
 	// Weak: Weak
 	// Merfolk: Merfolk
 	// Silenced: Silenced
-	// BrokenArmor: Broken Armor
+	BrokenArmor: Broken Armour
 	// Horrified: Horrified
 	// TheTongue: The Tongue
 	// CursedInferno: Cursed Inferno
@@ -8358,7 +8358,7 @@ BuffName: {
 	// VortexDebuff: Distorted
 	// DryadsWard: Dryad's Blessing
 	// WindPushed: Mighty Wind
-	// WitheredArmor: Withered Armor
+	WitheredArmor: Withered Armour
 	// WitheredWeapon: Withered Weapon
 	// OgreSpit: Oozed
 	// ParryDamageBuff: Striking Moment
@@ -8400,7 +8400,7 @@ BuffName: {
 	// FishMinecartLeft: "{$BuffName.MinecartLeft}"
 	// GolfCartMount: Golf Cart
 	// BabyBird: Baby Finch
-	// CatBast: The Bast Defense
+	CatBast: The Bast Defence
 	// SugarGlider: Sugar Glider
 	// VampireFrog: Vampire Frog
 	// UpbeatStar: Estee
@@ -8558,7 +8558,7 @@ BuffDescription: {
 	// Darkness: Decreased light vision
 	// Cursed: Cannot use any items
 	// OnFire: Slowly losing life
-	// Tipsy: Increased melee abilities, lowered defense
+	Tipsy: Increased melee abilities, lowered defence
 	// FairyBlue: A fairy is following you
 	// Werewolf: Physical abilities are increased
 	// Clairvoyance: Magic powers are increased
@@ -8601,7 +8601,7 @@ BuffDescription: {
 	// BabySnowman: A baby snowman is following you
 	// Burning: Losing life and slowed movement
 	// Suffocation: Losing life
-	// Ichor: Reduced defense
+	Ichor: Reduced defence
 	// Venom: Losing life
 	// Midas: Drop more money on death
 	// Blackout: Light vision severely reduced
@@ -8698,14 +8698,14 @@ BuffDescription: {
 	// Oiled: Taking more damage from being on fire
 	// Stoned: You are completely petrified!
 	// StarInBottle: Increased mana regeneration
-	// Sharpened: Melee weapons have armor penetration
+	Sharpened: Melee weapons have armour penetration
 	// Dazed: Movement is greatly slowed
 	// DeadlySphere: The Deadly Sphere will fight for you
 	// Obstructed: You can't see!
 	// VortexDebuff: Gravity around you is distorted
 	// DryadsWard: The power of nature protects you
 	// WindPushed: The wind moves you around!
-	// WitheredArmor: Your armor is lowered!
+	WitheredArmor: Your armour is lowered!
 	// WitheredWeapon: Your attacks are weaker!
 	// OgreSpit: Movement is significantly reduced
 	// ParryDamageBuff: 400% increased damage for next melee strike
@@ -8734,7 +8734,7 @@ BuffDescription: {
 	// WeaponImbueCursedFlames: Melee attacks inflict enemies with cursed flames
 	// WeaponImbueFire: Melee attacks set enemies on fire
 	// WeaponImbueGold: Melee attacks make enemies drop more gold
-	// WeaponImbueIchor: Melee attacks decrease enemies defense
+	WeaponImbueIchor: Melee attacks decrease enemies defence
 	// WeaponImbueNanites: Melee attacks confuse enemies
 	// WeaponImbueConfetti: Melee attacks cause confetti to appear
 	// WeaponImbuePoison: Melee attacks poison enemies
@@ -8925,8 +8925,8 @@ ArmorSetBonus: {
 		Increases your max number of sentries
 		Lightning Aura can now crit and strikes faster
 		''' */
-	// MetalTier1: 2 defense
-	// MetalTier2: 3 defense
+	MetalTier1: 2 defence
+	MetalTier2: 3 defence
 	// CobaltRanged: 20% chance to save ammo
 	// MythrilCaster: 17% reduced mana costs
 	// MythrilMelee: 10% increased melee critical strike chance
@@ -8938,7 +8938,7 @@ ArmorSetBonus: {
 	// TitaniumMelee: 18% increased melee and movement speed
 	// TitaniumRanged: 25% chance to save ammo
 	// ShadowScale: Increased movement speed and acceleration
-	// Wood: 1 defense
+	Wood: 1 defence
 	// Crimson: Greatly increased life regen
 	/* Frost:
 		'''
@@ -8977,7 +8977,7 @@ ArmorSetBonus: {
 		Not moving puts you in stealth,
 		increasing ranged ability and reducing chance for enemies to target you
 		''' */
-	// Platinum: 4 defense
+	Platinum: 4 defence
 	// Pumpkin: 10% increased damage
 	// Spooky: Increases summon damage by 25%
 	// SpectreDamage: Magic damage done will hurt extra nearby enemies
@@ -9364,7 +9364,7 @@ ProjectileName: {
 	// MartianTurretBolt: Electric Bolt
 	// MartianWalkerLaser: Laser Ray
 	// MechanicalPiranha: Mechanical Piranha
-	// MechanicWrench: Mechanic's Wrench
+	MechanicWrench: Mechanic's Spanner
 	// MedusaHead: Medusa Ray
 	// MedusaHeadRay: Medusa Ray
 	// Meowmere: Meowmere
@@ -9796,8 +9796,8 @@ ProjectileName: {
 	// Terragrim: Terragrim
 	// DripplerFlail: Drippler Crippler
 	// BabyBird: Finch
-	// PaperAirplaneA: Paper Airplane
-	// PaperAirplaneB: Paper Airplane
+	PaperAirplaneA: Paper Aeroplane
+	PaperAirplaneB: Paper Aeroplane
 	// ClusterRocketI: Rocket
 	// ClusterGrenadeI: Grenade
 	// ClusterMineI: Proximity Mine
@@ -9860,7 +9860,7 @@ ProjectileName: {
 	// FirstFractal: First Fractal
 	// FairyGlowstick: Fairy Glowstick
 	// VoltBunny: Volt Bunny
-	// CombatWrench: Combat Wrench
+	CombatWrench: Combat Spanner
 	// Shroomerang: Shroomerang
 	// JoustingLance: Jousting Lance
 	// ShadowJoustingLance: Shadow Jousting Lance
@@ -10013,7 +10013,7 @@ NPCName: {
 	// IlluminantSlime: Illuminant Slime
 	// Probe: Probe
 	// EaterofWorldsBody: Eater of Worlds
-	// PossessedArmor: Possessed Armor
+	PossessedArmor: Possessed Armour
 	// ToxicSludge: Toxic Sludge
 	// SantaClaus: Santa Claus
 	// SnowmanGangsta: Snowman Gangsta
@@ -10748,7 +10748,7 @@ BestiaryInfo: {
 	// KnockbackMedium: Med
 	// KnockbackHigh: High
 	// Attack: Attack
-	// Defense: Defense
+	Defense: Defence
 	// Knockback: Knockback Taken
 	// Life: Life
 	// IfUnlocked: If Unlocked
@@ -10759,7 +10759,7 @@ BestiaryInfo: {
 	// Sort_Rarity: Rarity
 	// Sort_Alphabetical: Name
 	// Sort_Attack: Attack
-	// Sort_Defense: Defense
+	Sort_Defense: Defence
 	// Sort_Coins: Coins
 	// Sort_HitPoints: HP
 	// PercentCollected: "{Percent} Collected"
@@ -10818,7 +10818,7 @@ Bestiary_BiomeText: {
 	// biome_OldOnesArmy: Minions from Etheria - they may have mistakenly invaded this world, but they wish to rule it nonetheless!
 	// biome_PumpkinMoon: A bitter harvest rises in the dead of night. Creatures of evil and darkness spook the lands, killing everything in their path.
 	// biome_FrostMoon: "Ho Ho Ho! On this not-so-silent night, festive beings wish to shower the world with gifts of blood and carnage. "
-	// biome_FrostLegion: This organized family of cold-hearted killers wish to ice any who cross them, and they don't like snitches... capisce?
+	biome_FrostLegion: This organised family of cold-hearted killers wish to ice any who cross them, and they don't like snitches... capisce?
 	// biome_SlimeRain: For reasons beyond any meteorological explanation, slimy things are raining down from above by the buckets!
 	// biome_WindyDay: Don't get carried away! Nature is throwing a party and wishes to sweep everybody - and everything - off their feet!
 	// biome_BloodMoon: When the moon rises drenched in blood, the dead rise with it! These macabre creatures seek to add fresh meat to their dripping ranks.
@@ -10865,7 +10865,7 @@ Bestiary_BiomeText: {
 	// biome_Granite: A glistening, dark material adorns the caverns here. Granite paves the way for progress in architectural fashion and durable monsters.
 	// biome_UndergroundCrimson: With the ancient spirit of darkness released, the Crimson's veiny growth reaches new depths, and its macabre fiends gain strength.
 	// biome_UndergroundHallow: With the evils now unleashed into the depths of the world, the Hallow fights back with powerful minions of light.
-	// biome_Marble: A smooth material wrought with pleasing veins of color coat the walls of this cavern. An ancient civilization of monsters dwell here.
+	biome_Marble: A smooth material wrought with pleasing veins of colour coat the walls of this cavern. An ancient civilization of monsters dwell here.
 	// biome_CorruptIce: Cold ice infused with even colder Corruption results in bitterly-frozen terrors lurking beneath the treacherous icy caverns.
 	// biome_HallowIce: Ice serves as a catalyst for the blessing, the Hallow's luminous source of power. Strong entities take advantage of this light.
 	// biome_CrimsonIce: These bitterly cold caverns of ice, saturated with the blood of Crimson, host a new variety of menacing frozen fiends.
@@ -10884,7 +10884,7 @@ CommonBestiaryFlavor: {
 	// GoldBaitCritter: Rarely, critters are found coated entirely in gold! They are worth great coin to shopkeepers and fish absolutely love golden bait!
 	// Jellyfish: That strange tingling sensation in the water may be the unwelcome surging of electrical death from a brainless jellyfish. Swim with care.
 	// Pigron: This elusive dragon-pig hybrid has excellent stealth capabilities despite its rotund figure. It is uncertain how they came to exist.
-	// Dragonfly: A swift-flying insect which hunts mosquitoes. Comes in a variety of colors. Fish are somewhat attracted to these.
+	Dragonfly: A swift-flying insect which hunts mosquitoes. Comes in a variety of colours. Fish are somewhat attracted to these.
 	// Mimic: Talking to a chest doesn't cause craziness, but if the chest answers back, it may cause death! It still contains rare treasure, regardless!
 	// Penguin: Penguins make their home in the coldest regions of the world, waddling around looking for tasty fish.
 	// LavaBat: What's worse than a rabid, fast-flying, and annoying flying rodent? One that is on fire, of course!
@@ -10899,7 +10899,7 @@ CommonBestiaryFlavor: {
 	// CostumeDemonEye: No one knows who dressed these demon eyes up in cute costumes, but the whole process hasn't made them any friendlier.
 	// CostumeZombie: Wearing costumes isn't fooling anyone; these zombies are clearly way too old to be trick or treating.
 	// CostumeSkeleton: Skeletons need to wear very elaborate costumes during Halloween, or else people think they are dressing up as skeletons.
-	// ZombieXmas: Even zombies can celebrate the holidays. Their festive outfits are just right, but their holiday spirit could use some work.
+	ZombieXmas: Even zombies can celebrate Christmas. Their festive outfits are just right, but their Christmas spirit could use some work.
 	// RibbonSlime: A perfectly gift wrapped bundle of slime. A wonderfully deadly present for any festive occasion.
 	// ZombieElf: Elves that used to work for Santa, but have since been zombified. They don't complain much, so they are still pretty good helpers.
 	// AntlionCharger: The soldiers of the antlion species, Antlion Chargers ferociously chase after intruders with a surprising speed.
@@ -10910,7 +10910,7 @@ CommonBestiaryFlavor: {
 	// Sandshark: In ancient times, a saltwater river once ran through the desert. These powerful creatures evolved to survive in the now dry sand.
 	// Lamia: By the time glowing red eyes appear in the darkness of the desert caves, it is already too late. The lamias have found their prey.
 	// GemSquirrel: Glistening squirrels who strayed too deep become ensorcelled with residual cursed energy retained in gemstones.
-	// GemBunny: These colorful rabbits made their way so deep, their reaction to magicked gems resulted in a coveted sparkling appearance.
+	GemBunny: These colourful rabbits made their way so deep, their reaction to magicked gems resulted in a coveted sparkling appearance.
 	// TownSlime: Where did these sentient slimes come from? It is a secret to everybody, but they are certainly oozing with personality!
 }
 
@@ -10944,7 +10944,7 @@ Bestiary_FlavorText: {
 	// npc_FireImp: A lesser demon imbued with hell magic. Capable of teleporting and hurling phantom fireballs towards their foes.
 	// npc_GoblinPeon: Common footsoldiers of the Goblin Army, these foul creatures are good for little more than cannon fodder... and breaking down doors.
 	// npc_GoblinThief: Quick strike units of the Goblin Army, these pesky foes specialize in nimble movement and close-quarters combat.
-	// npc_GoblinWarrior: The backbone of the Goblin Army infantry, these heavily-armored soldiers can take tremendous damage as they march undeterred.
+	npc_GoblinWarrior: The backbone of the Goblin Army infantry, these heavily-armoured soldiers can take tremendous damage as they march undeterred.
 	// npc_GoblinSorcerer: As primitive as they are, some goblins have the potential for manipulating magicked shadow energy through a form of hexing.
 	// npc_AngryBones: "{$CommonBestiaryFlavor.AngryBones}"
 	// npc_DarkCaster: Doomed to watch over the Dungeon, these mages teleport to confuse their prey, before striking them down with a blast of water.
@@ -10995,7 +10995,7 @@ Bestiary_FlavorText: {
 	// npc_EnchantedSword: Animated by the blessed light of the crystals, it will slice through anything to cleanse the world's evils.
 	// npc_Mimic: "{$CommonBestiaryFlavor.Mimic}"
 	// npc_Unicorn: These majestic single-horned equines storm angrily through the hallowed land in search of lowly intrusions needing to be cleansed away.
-	// npc_WyvernHead: A colossal dragon-like creature unleashed along with the ancient spirits. It rules the skies with its unrivaled might.
+	npc_WyvernHead: A colossal dragon-like creature unleashed along with the ancient spirits. It rules the skies with its unrivalled might.
 	// npc_GiantBat: The oversized cousins of Cave Bats, these bats are more dangerous and can confuse their enemies with their bite.
 	// npc_Corruptor: Like a cancer, the putrid creatures born from the Corruption mutate and grow into bigger, more deadly forms which discharge acids.
 	// npc_DiggerHead: Exposure to the effects of ancient magicks flowing throughout the cracks of the world causes unusual rapid growths in giant worms.
@@ -11026,7 +11026,7 @@ Bestiary_FlavorText: {
 	// npc_IlluminantBat: Blessed with the prismatic light of the Hallow, the Illuminant Bats are a vibrant pink blur arcing across the darkness of the Underground.
 	// npc_IlluminantSlime: Slimes exposed to the light of the Hallow's crystals begin to emit that very same light, glowing brightly in the darkness.
 	// npc_Probe: A singular probe detached from the Destroyer's body serves as a remote laser battery, often in a swarm of other probes.
-	// npc_PossessedArmor: Whatever possessed this suit of armor to suddenly walk about and start killing everyone? It lacks a corporeal body.
+	npc_PossessedArmor: Whatever possessed this suit of armour to suddenly walk about and start killing everyone? It lacks a corporeal body.
 	// npc_ToxicSludge: Distantly related to the common slime, the Toxic Sludge takes down its prey with potent toxins and a disarmingly toothy smile.
 	// npc_SantaClaus: Only present during a specific time of year, Santa Claus makes a big entrance and an even bigger, rather explosive exit. Ho! Ho! Ho!
 	// npc_SnowmanGangsta: While the world's inhabitants celebrate festivities, gangster snowmen party by slaying everyone with their tommy guns.
@@ -11060,7 +11060,7 @@ Bestiary_FlavorText: {
 	// npc_AngryTrapper: When a Man Eater consumes enough human flesh, it undergoes a cocoon-like metamorphosis into a far deadlier form.
 	// npc_MossHornet: The empowered flora of the Jungle has merged with these species of Hornet, strengthening their exoskeletons and stingers.
 	// npc_Derpling: These large, sapphire-shelled fleas leap around incessantly. They can drain the blood content of one man within seconds.
-	// npc_Steampunker: The Steampunker has a particular taste for steam-fueled machinery and gadgets. She sells her gizmos with an endearing accent.
+	npc_Steampunker: The Steampunker has a particular taste for steam-fuelled machinery and gadgets. She sells her gizmos with an endearing accent.
 	// npc_CrimsonAxe: Ensorcelled by the Crimson collective, this weapon moves about and chops its enemies by its own will.
 	// npc_PigronCrimson: "{$CommonBestiaryFlavor.Pigron}"
 	// npc_FaceMonster: It would be unwise to face off with one of these unfeeling, hungry mutations. Their mouths are large enough to devour all things.
@@ -11079,7 +11079,7 @@ Bestiary_FlavorText: {
 	// npc_PurpleEye: "{$CommonBestiaryFlavor.DemonEye}"
 	// npc_LostGirl: Naked and afraid, this girl stands still, deep in the world, as if waiting for someone to rescue her and lead her to the surface.
 	// npc_Nymph: Masterfully deceives explorers by posing as a lost girl, then attacks with ferocious might, blood-lust in her eyes.
-	// npc_ArmoredViking: The most elite vikings were worthy of the strongest armor. It seems that it wasn't terribly effective, given their state now.
+	npc_ArmoredViking: The most elite vikings were worthy of the strongest armour. It seems that it wasn't terribly effective, given their state now.
 	// npc_Lihzahrd: A reclusive race of reptilian folk found exclusively in the mysterious jungle Temple. They look primitive, but are quite advanced.
 	// npc_FemaleZombie: "{$CommonBestiaryFlavor.Zombie}"
 	// npc_HeadacheSkeleton: "{$CommonBestiaryFlavor.Skeleton}"
@@ -11097,10 +11097,10 @@ Bestiary_FlavorText: {
 	// npc_PirateCorsair: Once mercenaries from a distant land, Corsairs brandish deadly scimitars with unyielding skill and a cut-throat agenda.
 	// npc_PirateDeadeye: Nobody knows if 'Dead Eye' refers to their precise aim, or the fact that one of their eyes is indeed 'dead'... like their targets.
 	// npc_PirateCrossbower: Some wee lasses aren't content staying at port waiting for their men to return from a raid, so they join in on the deadly fun!
-	// npc_PirateCaptain: A pirate captain's love for riches is only rivaled by his obsession with heavy gunpowder and large, rampart-shattering cannons!
+	npc_PirateCaptain: A pirate captain's love for riches is only rivalled by his obsession with heavy gunpowder and large, rampart-shattering cannons!
 	// npc_CochinealBeetle: Found in deep, dark caverns, these large beetles are sought out for the deep, blood-red secretions stored in their scaly exoskeleton.
 	// npc_CyanBeetle: Hardy to extremely cold temperatures, these beetles contain a desired bluish fluid which can be used to dye textiles.
-	// npc_LacBeetle: These scaly insects thrive in thick subterranean foliage. Their secretions stain many materials in a beautiful violet color.
+	npc_LacBeetle: These scaly insects thrive in thick subterranean foliage. Their secretions stain many materials in a beautiful violet colour.
 	// npc_SeaSnail: This unusually large snail makes its home deep in the ocean. Its mucus can be manufactured into a purple dye.
 	// npc_Squid: A betentacled marine creature which discharges a thick, black ink when threatened. The ink is collected for aesthetic purposes.
 	// npc_QueenBee: This highly aggressive monstrosity responds violently when her larva is disturbed; the honey-laden hives are her home turf.
@@ -11108,7 +11108,7 @@ Bestiary_FlavorText: {
 	// npc_FlyingFish: Certain species of fish gain the most peculiar abilities when it rains. They only like one thing about land-dwellers: their flesh.
 	// npc_UmbrellaSlime: The previous owner of this umbrella learned the hard way: umbrellas are good protection against rain, but not against slime.
 	// npc_FlyingSnake: Kept as pets and guardians by the Lihzahrd race, the flying snakes will attack any who trespass on the Temple's protected grounds.
-	// npc_Painter: The Painter can talk about all the different shades of colors with which one can paint the walls. He'll sell but a handful of them!
+	npc_Painter: The Painter can talk about all the different shades of colours with which one can paint the walls. He'll sell but a handful of them!
 	// npc_WitchDoctor: It's unusual for a Lihzahrd to be outside the Temple. Even more unusual are the voodoo things he sells. He prefers his jungle digs.
 	// npc_Pirate: Ahoy! The only good Pirate Captain is... one that sells cannons and weapons to take out all competing Pirate Captains!
 	// npc_HornetFatty: "{$CommonBestiaryFlavor.Hornet}"
@@ -11162,8 +11162,8 @@ Bestiary_FlavorText: {
 	// npc_GiantCursedSkull: No one knows where these giant skulls came from, but like their smaller cousins, they seek out and curse the living with their magic.
 	// npc_Paladin: In distant history, these mighty undead knights once guarded a prosperous city before a massive curse befell them.
 	// npc_SkeletonSniper: These eagle-eyed sharpshooters let nothing escape their crosshairs. Part of an elite military unit in their past lives.
-	// npc_TacticalSkeleton: With thick armor and mighty boomsticks, it's clear these bones are prepared for a siege. Part of an elite military unit in their past lives.
-	// npc_SkeletonCommando: Rocket-powered and fueled with rage, these cursed skeletons prefer the nuclear option. Part of an elite military unit in their past lives.
+	npc_TacticalSkeleton: With thick armour and mighty boomsticks, it's clear these bones are prepared for a siege. Part of an elite military unit in their past lives.
+	npc_SkeletonCommando: Rocket-powered and fuelled with rage, these cursed skeletons prefer the nuclear option. Part of an elite military unit in their past lives.
 	// npc_AngryBonesBig: "{$CommonBestiaryFlavor.AngryBones}"
 	// npc_AngryBonesBigMuscle: "{$CommonBestiaryFlavor.AngryBones}"
 	// npc_AngryBonesBigHelmet: "{$CommonBestiaryFlavor.AngryBones}"
@@ -11210,7 +11210,7 @@ Bestiary_FlavorText: {
 	// npc_ZombieElf: "{$CommonBestiaryFlavor.ZombieElf}"
 	// npc_ZombieElfBeard: "{$CommonBestiaryFlavor.ZombieElf}"
 	// npc_ZombieElfGirl: "{$CommonBestiaryFlavor.ZombieElf}"
-	// npc_PresentMimic: Surprise! The most unexpected gift this holiday season, the Present Mimic is a nicely gift-wrapped box of teeth and death.
+	npc_PresentMimic: Surprise! The most unexpected gift this Christmas season, the Present Mimic is a nicely gift-wrapped box of teeth and death.
 	// npc_GingerbreadMan: A gingerbread man seeking vengeance for his long-eaten brethren. He may look yummy, but this is one tough cookie.
 	// npc_Yeti: An ill-tempered ape from cold, snowy regions to the north. They do not appreciate festivity, so they've come to spoil all the fun.
 	// npc_Everscream: If trees could scream, this evil evergreen would do so constantly. Deadly are the ornaments hurled from its branches.
@@ -11223,7 +11223,7 @@ Bestiary_FlavorText: {
 	// npc_Flocko: These ferocious flakes are the frozen minions of the Ice Queen. Where this sinister snow falls, so shall her icy judgment.
 	// npc_Stylist: The Stylist loves style, gossip, and hair. Aside from performing a miracle makeover, she sells some hair product as well.
 	// npc_Firefly: Appears at night in calm locations, illuminating the sky with strobing green light. Fish are fairly attracted to these.
-	// npc_Butterfly: Beautiful fluttering insects that love sunrises. Fish are attracted to these based on their color variety.
+	npc_Butterfly: Beautiful fluttering insects that love sunrises. Fish are attracted to these based on their colour variety.
 	// npc_Worm: A slick, tubular invertebrate found hiding in rocks, dirt, and grass. Loves the rain. Fish are especially attracted to these.
 	// npc_LightningBug: Appears at night in blessed locations, filling the sky with flashing cyan light. Fish are especially attracted to these.
 	// npc_Snail: A slimy mollusk that thrives in damp, dark places. Fish are barely attracted to these.
@@ -11248,7 +11248,7 @@ Bestiary_FlavorText: {
 	// npc_MartianEngineer: Martian soldiers who lack combat ability may instead be deployed for their mechanical aptitude, constructing turrets on the field.
 	// npc_MartianTurret: Named after a historic Terrarian, these turrets are built by Martian engineers and rain devastating energy upon anyone nearby.
 	// npc_MartianDrone: The data collected from these drones are sent back to the motherships moments before they self-destruct onto their foes.
-	// npc_GigaZapper: Martians who show great potential in close combat are equipped with powerful energy spears that can atomize anything.
+	npc_GigaZapper: Martians who show great potential in close combat are equipped with powerful energy spears that can atomise anything.
 	// npc_ScutlixRider: Elite Ray Gunners often ride these powerful alien creatures into battle as cavalry. If their mount dies, they will pursue on foot.
 	// npc_Scutlix: Native to the Martian homeworld, these creatures function similarly to horses. That is, if horses could fire lasers from their eyes.
 	// npc_MartianSaucerCore: An advanced flying saucer from somewhere well beyond this world. The destruction from its weaponry is unimaginable.
@@ -11273,7 +11273,7 @@ Bestiary_FlavorText: {
 	// npc_NebulaSoldier: The cosmic power held by these humanoid warriors grant them psychic abilities, in which they use to accurately shoot down foes.
 	// npc_VortexRifleman: These alien soldiers carry a versatile arsenal of celestial rifles and cosmic accessories that allow them to defy gravity.
 	// npc_VortexHornetQueen: The final evolutionary stage of the alien hornet. They fire powerful disruptive energy at their prey, and give birth to many larvae.
-	// npc_VortexHornet: These flying insectoids utilize wormholes to ambush intruders near the celestial pillars. They hunt in pairs and may swiftly evolve.
+	npc_VortexHornet: These flying insectoids utilise wormholes to ambush intruders near the celestial pillars. They hunt in pairs and may swiftly evolve.
 	// npc_VortexLarva: The larval stage of the alien hornets. They may seem weak and harmless, but if ignored they will evolve into powerful beings.
 	// npc_VortexSoldier: The cosmic energy surging through these warriors builds up until their untimely demise, resulting in an explosion of lightning.
 	// npc_ArmedZombie: "{$CommonBestiaryFlavor.Zombie}"
@@ -11334,7 +11334,7 @@ Bestiary_FlavorText: {
 	// npc_LunarTowerNebula: Representing a stormy celestial body known as 'nebula', this tower holds the seal locking away a terrifying tyrant.
 	// npc_GiantWalkingAntlion: "{$CommonBestiaryFlavor.AntlionCharger}"
 	// npc_GiantFlyingAntlion: "{$CommonBestiaryFlavor.AntlionSwarmer}"
-	// npc_DuneSplicerHead: The world's largest, most deadly worm. Strengthened by ancient magicks, it can devour a spicy Terrarian quicker than they realize.
+	npc_DuneSplicerHead: The world's largest, most deadly worm. Strengthened by ancient magicks, it can devour a spicy Terrarian quicker than they realise.
 	// npc_TombCrawlerHead: The desert is home to one of the largest varieties of worms across the land. It has a voracious appetite for careless explorers.
 	// npc_LunarTowerSolar: Representing a flaming celestial event known as 'solar flares', this tower holds the seal locking away a terrifying tyrant.
 	// npc_SolarSpearman: These highly aggressive celestial soldiers carry a large, fiery spear that can melt nearly anything it penetrates.
@@ -11449,7 +11449,7 @@ Bestiary_FlavorText: {
 	// npc_HallowBoss: Beneath the Hallow's cleansing blanket lies a vengeful fae goddess bent on scrubbing the land of any and all impurity.
 	// npc_QueenSlimeBoss: Hallowed slimes consolidated into a haughty, crushing force adorned in dazzling crystals. She is rumored to grow wings.
 	// npc_MaggotZombie: Wanders aimlessly to infest the living with undeath, unaware of its own maggoty infestation.
-	// npc_QueenSlimeMinionBlue: The blue-spectrumed crystal slimes specialize in growing and ejecting pointed crystal shards from their gelatinous bodies.
+	npc_QueenSlimeMinionBlue: The blue-spectrumed crystal slimes specialise in growing and ejecting pointed crystal shards from their gelatinous bodies.
 	// npc_QueenSlimeMinionPink: On the pink side of the crystal spectrum, these crystal slimes pop off tumor-like gel growths to assault their enemies.
 	// npc_QueenSlimeMinionPurple: Crystal slimes on the purple spectrum grow wings much like their royal creator, becoming aerial threats.
 	// npc_EmpressButterfly: Should one of these luminescent beings perish in the chaos of night, a sleeping tyrant is rumored to violently awaken.
@@ -11469,7 +11469,7 @@ Bestiary_FlavorText: {
 	// npc_TownSlimeRainbow: Born of the combined energies of Shimmer and the Queen Slime, this slime is full of boundless energy and enthusiasm! And so fancy!
 	// npc_TownSlimeRed: Irascible and insufferable, this grumpy slime is probably up to no good. Probably. It's the thought that counts, really.
 	// npc_TownSlimeYellow: This slime knows that great witches wear impressive hats, but it only found a droopy one. Might explain the backfired polymorph!
-	// npc_TownSlimeCopper: A hero amongst slimes, it wields the greatest arms and armor known to its kind. It doesn't actually know how to use them, but it's a start.
+	npc_TownSlimeCopper: A hero amongst slimes, it wields the greatest arms and armour known to its kind. It doesn't actually know how to use them, but it's a start.
 	// npc_BoundTownSlimeYellow: A curious frog with a funny hat, surrounded by potent magic! Perhaps something can break its curse... you probably shouldn't kiss it!
 	// npc_Shimmerfly: These scintillating fairy-like creatures are born when animals wander into the glowing depths of a Shimmer pond.
 	// npc_ShimmerSlime: After a quick swim in the Shimmer, this prismatic slime has been infused with the powers of the mysterious fluid.
@@ -11535,7 +11535,7 @@ CreativePowers: {
 	// TabSearch: If Searched For
 	// TabBlocks: Blocks
 	// TabWeapons: Weapons
-	// TabArmor: Armor
+	TabArmor: Armour
 	// TabAccessories: Accessories
 	// TabConsumables: Consumables
 	// TabMisc: Misc
@@ -11639,7 +11639,7 @@ CommonItemTooltip: {
 	// MinorStats: Minor improvements to all stats
 	// MediumStats: Medium improvements to all stats
 	// MajorStats: Major improvements to all stats
-	// TipsyStats: Minor improvements to melee stats & lowered defense
+	TipsyStats: Minor improvements to melee stats & lowered defence
 	// EtherianManaCost10: Costs 10 Etherian Mana per use while defending an Eternia Crystal
 	// GolfBall: Can be hit with a golf club
 	// Sentry: Summons a sentry
@@ -11648,16 +11648,16 @@ CommonItemTooltip: {
 		A well-rounded club best for mid-range distances
 		Golf balls will carry a good distance with decent vertical loft
 		''' */
-	/* GolfPutter:
+	GolfPutter:
 		'''
-		A specialized club for finishing holes
+		A specialised club for finishing holes
 		Golf balls will stay close to the ground over short distances for precision shots
-		''' */
-	/* GolfWedge:
 		'''
-		A specialized club for sand pits or tall obstacles
+	GolfWedge:
+		'''
+		A specialised club for sand pits or tall obstacles
 		Golf balls will gain tons of vertical loft but will not carry very far
-		''' */
+		'''
 	/* GolfDriver:
 		'''
 		A powerful club for long distances
@@ -11682,7 +11682,7 @@ CommonItemTooltip: {
 	// MechdusaSummonNotDuringEverything: "'It has no effect in this world'"
 	// LuminiteVariant: "'A forbidden building material from beyond'"
 	// IncreasesDefenseBy: Increases defense by {0}
-	// IncreasesArmorPenBy: Increases armor penetration by {0}
+	IncreasesArmorPenBy: Increases armour penetration by {0}
 	// IncreasesMaxLifeBy: Increases maximum life by {0}
 	// IncreasesMaxManaBy: Increases maximum mana by {0}
 	// IncreasesMaxLifeByPercent: Increases maximum life by {0}%
@@ -11701,7 +11701,7 @@ CommonItemTooltip: {
 	// PercentReducedManaCost: "{0}% reduced mana cost"
 	// PercentIncreasedMiningSpeed: "{0}% increased mining speed"
 	// PercentIncreasedMovementSpeed: "{0}% increased movement speed"
-	// ArmorPenetration: "{0} armor penetration"
+	ArmorPenetration: "{0} armour penetration"
 	// PercentIncreasedDamage: "{0}% increased damage"
 	// PercentIncreasedCritChance: "{0}% increased critical strike chance"
 	// PercentIncreasedDamageCritChance: "{0}% increased damage and critical strike chance"
@@ -12036,7 +12036,7 @@ ItemName: {
 	// TikiMask: Tiki Mask
 	// Meteorite: Meteorite
 	// TikiShirt: Tiki Shirt
-	// TikiPants: Tiki Pants
+	TikiPants: Tiki Trousers
 	// LeafWings: Leaf Wings
 	// BlizzardinaBalloon: Blizzard in a Balloon
 	// BundleofBalloons: Bundle of Balloons
@@ -12159,7 +12159,7 @@ ItemName: {
 	// SpaceGun: Space Gun
 	// GreenStainedGlass: Green Stained Glass
 	// RedStainedGlass: Red Stained Glass
-	// MulticoloredStainedGlass: Multicolored Stained Glass
+	MulticoloredStainedGlass: Multicoloured Stained Glass
 	// SkeletronHand: Skeletron Hand
 	// Skull: Skull
 	// BallaHat: Balla Hat
@@ -12168,7 +12168,7 @@ ItemName: {
 	// EyePatch: Eye Patch
 	// SailorShirt: Sailor Shirt
 	// RocketBoots: Rocket Boots
-	// SailorPants: Sailor Pants
+	SailorPants: Sailor Trousers
 	// SkeletronMask: Skeletron Mask
 	// AmethystRobe: Amethyst Robe
 	// TopazRobe: Topaz Robe
@@ -12177,7 +12177,7 @@ ItemName: {
 	// RubyRobe: Ruby Robe
 	// DiamondRobe: Diamond Robe
 	// WhiteTuxedoShirt: White Tuxedo Shirt
-	// WhiteTuxedoPants: White Tuxedo Pants
+	WhiteTuxedoPants: White Tuxedo Trousers
 	// GrayBrick: Gray Brick
 	// PanicNecklace: Panic Necklace
 	// LifeFruit: Life Fruit
@@ -12418,7 +12418,7 @@ ItemName: {
 	// TrioSuperHeroes: Trio Super Heroes
 	// SpectreHood: Spectre Hood
 	// SpectreRobe: Spectre Robe
-	// SpectrePants: Spectre Pants
+	SpectrePants: Spectre Trousers
 	// SpectrePickaxe: Spectre Pickaxe
 	// SpectreHamaxe: Spectre Hamaxe
 	// Ectoplasm: Ectoplasm
@@ -12509,7 +12509,7 @@ ItemName: {
 	// CrownosWings: Crowno's Wings
 	// CenxsWings: Cenx's Wings
 	// CenxsDress: Cenx's Dress
-	// CenxsDressPants: Cenx's Dress Pants
+	CenxsDressPants: Cenx's Dress Trousers
 	// PalladiumColumn: Palladium Column
 	// ShinyRedBalloon: Shiny Red Balloon
 	// PalladiumColumnWall: Palladium Column Wall
@@ -12676,7 +12676,7 @@ ItemName: {
 	// SoulCake: Soul Cake
 	// NurseHat: Nurse Hat
 	// NurseShirt: Nurse Shirt
-	// NursePants: Nurse Pants
+	NursePants: Nurse Trousers
 	// WizardsHat: Wizard's Hat
 	// Hellstone: Hellstone
 	// GuyFawkesMask: Guy Fawkes Mask
@@ -12684,36 +12684,36 @@ ItemName: {
 	// SteampunkGoggles: Steampunk Goggles
 	// CyborgHelmet: Cyborg Helmet
 	// CyborgShirt: Cyborg Shirt
-	// CyborgPants: Cyborg Pants
+	CyborgPants: Cyborg Trousers
 	// CreeperMask: Creeper Mask
 	// CreeperShirt: Creeper Shirt
-	// CreeperPants: Creeper Pants
+	CreeperPants: Creeper Trousers
 	// CatMask: Cat Mask
 	// HellstoneBar: Hellstone Bar
 	// CatShirt: Cat Shirt
-	// CatPants: Cat Pants
+	CatPants: Cat Trousers
 	// GhostMask: Ghost Mask
 	// GhostShirt: Ghost Shirt
 	// PumpkinMask: Pumpkin Mask
 	// PumpkinShirt: Pumpkin Shirt
-	// PumpkinPants: Pumpkin Pants
+	PumpkinPants: Pumpkin Trousers
 	// RobotMask: Robot Mask
 	// RobotShirt: Robot Shirt
-	// RobotPants: Robot Pants
+	RobotPants: Robot Trousers
 	// MudBlock: Mud Block
 	// UnicornMask: Unicorn Mask
 	// UnicornShirt: Unicorn Shirt
-	// UnicornPants: Unicorn Pants
+	UnicornPants: Unicorn Trousers
 	// VampireMask: Vampire Mask
 	// VampireShirt: Vampire Shirt
-	// VampirePants: Vampire Pants
+	VampirePants: Vampire Trousers
 	// WitchHat: Witch Hat
 	// LeprechaunHat: Leprechaun Hat
 	// LeprechaunShirt: Leprechaun Shirt
-	// LeprechaunPants: Leprechaun Pants
+	LeprechaunPants: Leprechaun Trousers
 	// Sapphire: Sapphire
 	// PixieShirt: Pixie Shirt
-	// PixiePants: Pixie Pants
+	PixiePants: Pixie Trousers
 	// PrincessHat: Princess Hat
 	// PrincessDressNew: Princess Dress
 	// GoodieBag: Goodie Bag
@@ -12724,7 +12724,7 @@ ItemName: {
 	// KarateTortoiseMask: Karate Tortoise Mask
 	// Ruby: Ruby
 	// KarateTortoiseShirt: Karate Tortoise Shirt
-	// KarateTortoisePants: Karate Tortoise Pants
+	KarateTortoisePants: Karate Tortoise Trousers
 	// CandyCornRifle: Candy Corn Rifle
 	// CandyCorn: Candy Corn
 	// JackOLanternLauncher: Jack 'O Lantern Launcher
@@ -12734,7 +12734,7 @@ ItemName: {
 	// ScarecrowHat: Scarecrow Hat
 	// ScarecrowShirt: Scarecrow Shirt
 	// Emerald: Emerald
-	// ScarecrowPants: Scarecrow Pants
+	ScarecrowPants: Scarecrow Trousers
 	// Cauldron: Cauldron
 	// PumpkinChair: Pumpkin Chair
 	// PumpkinDoor: Pumpkin Door
@@ -12771,7 +12771,7 @@ ItemName: {
 	// ReaperRobe: Reaper Robe
 	// FoxMask: Fox Mask
 	// FoxShirt: Fox Shirt
-	// FoxPants: Fox Pants
+	FoxPants: Fox Trousers
 	// CatEars: Cat Ears
 	// BloodyMachete: Bloody Machete
 	// TheHorsemansBlade: The Horseman's Blade
@@ -12790,10 +12790,10 @@ ItemName: {
 	// SpaceCreatureMask: Space Creature Mask
 	// SpaceCreatureShirt: Space Creature Shirt
 	// Star: Star
-	// SpaceCreaturePants: Space Creature Pants
+	SpaceCreaturePants: Space Creature Trousers
 	// WolfMask: Wolf Mask
 	// WolfShirt: Wolf Shirt
-	// WolfPants: Wolf Pants
+	WolfPants: Wolf Trousers
 	// PumpkinMoonMedallion: Pumpkin Moon Medallion
 	// NecromanticScroll: Necromantic Scroll
 	// JackingSkeletron: Jacking Skeletron
@@ -12803,7 +12803,7 @@ ItemName: {
 	// IvyWhip: Ivy Whip
 	// MorbidCuriosity: Morbid Curiosity
 	// TreasureHunterShirt: Treasure Hunter Shirt
-	// TreasureHunterPants: Treasure Hunter Pants
+	TreasureHunterPants: Treasure Hunter Trousers
 	// DryadCoverings: Dryad Coverings
 	// DryadLoincloth: Dryad Loincloth
 	// MourningWoodTrophy: Mourning Wood Trophy
@@ -12838,7 +12838,7 @@ ItemName: {
 	// RedAndGreenGardland: Red and Green Garland
 	// GreenGardland: Green Garland
 	// GreenAndWhiteGarland: Green and White Garland
-	// MulticoloredBulb: Multicolored Bulb
+	MulticoloredBulb: Multicoloured Bulb
 	// RedBulb: Red Bulb
 	// YellowBulb: Yellow Bulb
 	// GreenBulb: Green Bulb
@@ -12850,7 +12850,7 @@ ItemName: {
 	// WhiteAndRedBulb: White and Red Bulb
 	// WhiteAndYellowBulb: White and Yellow Bulb
 	// WhiteAndGreenBulb: White and Green Bulb
-	// MulticoloredLights: Multicolored Lights
+	MulticoloredLights: Multicoloured Lights
 	// RedLights: Red Lights
 	// GreenLights: Green Lights
 	// BlueLights: Blue Lights
@@ -12897,7 +12897,7 @@ ItemName: {
 	// MrsClauseHeels: Mrs. Claus Heels
 	// ParkaHood: Parka Hood
 	// ParkaCoat: Parka Coat
-	// ParkaPants: Parka Pants
+	ParkaPants: Parka Trousers
 	// SnowHat: Snow Hat
 	// UglySweater: Ugly Sweater
 	// MushroomGrassSeeds: Mushroom Grass Seeds
@@ -12906,7 +12906,7 @@ ItemName: {
 	// TreeTrunks: Tree Trunks
 	// ElfHat: Elf Hat
 	// ElfShirt: Elf Shirt
-	// ElfPants: Elf Pants
+	ElfPants: Elf Trousers
 	// SnowmanCannon: Snowman Cannon
 	// NorthPole: North Pole
 	// ChristmasTreeWallpaper: Christmas Tree Wallpaper
@@ -13139,7 +13139,7 @@ ItemName: {
 	// Salmon: Salmon
 	// AtlanticCod: Atlantic Cod
 	// Gel: Gel
-	// JunglePants: Jungle Pants
+	JunglePants: Jungle Trousers
 	// Tuna: Tuna
 	// RedSnapper: Red Snapper
 	// NeonTetra: Neon Tetra
@@ -13214,7 +13214,7 @@ ItemName: {
 	// QueenSpiderStaff: Queen Spider Staff
 	// AnglerHat: Angler Hat
 	// AnglerVest: Angler Vest
-	// AnglerPants: Angler Pants
+	AnglerPants: Angler Trousers
 	// Sunglasses: Sunglasses
 	// SpiderMask: Spider Mask
 	// SpiderBreastplate: Spider Breastplate
@@ -13260,7 +13260,7 @@ ItemName: {
 	// BoneSofa: Bone Sofa
 	// CactusSofa: Cactus Sofa
 	// SpookySofa: Spooky Sofa
-	// TuxedoPants: Tuxedo Pants
+	TuxedoPants: Tuxedo Trousers
 	// SkywareSofa: Skyware Sofa
 	// HoneySofa: Honey Sofa
 	// SteampunkSofa: Steampunk Sofa
@@ -13304,7 +13304,7 @@ ItemName: {
 	// EaterofPlankton: Eater of Plankton
 	// FallenStarfish: Fallen Starfish
 	// TheFishofCthulu: The Fish of Cthulhu
-	// PlumbersPants: Plumber's Pants
+	PlumbersPants: Plumber's Trousers
 	// Fishotron: Fishotron
 	// Harpyfish: Harpyfish
 	// Hungerfish: Hungerfish
@@ -13337,7 +13337,7 @@ ItemName: {
 	// Slimefish: Slimefish
 	// TropicalBarracuda: Tropical Barracuda
 	// KingSlimeTrophy: King Slime Trophy
-	// HerosPants: Hero's Pants
+	HerosPants: Hero's Trousers
 	// ShipInABottle: Ship in a Bottle
 	// KingSlimeMask: King Slime Mask
 	// FinWings: Fin Wings
@@ -13352,13 +13352,13 @@ ItemName: {
 	// GingerBeard: Ginger Beard
 	// ArchaeologistsHat: Archaeologist's Hat
 	// ArchaeologistsJacket: Archaeologist's Jacket
-	// ArchaeologistsPants: Archaeologist's Pants
+	ArchaeologistsPants: Archaeologist's Trousers
 	// OpticStaff: Optic Staff
 	// BlackThread: Black Thread
 	// GreenThread: Green Thread
 	// NinjaHood: Ninja Hood
 	// NinjaShirt: Ninja Shirt
-	// NinjaPants: Ninja Pants
+	NinjaPants: Ninja Trousers
 	// Leather: Leather
 	// StoneWall: Stone Wall
 	// RedHat: Red Hat
@@ -13372,7 +13372,7 @@ ItemName: {
 	// DivingHelmet: Diving Helmet
 	// FamiliarShirt: Familiar Shirt
 	// Acorn: Acorn
-	// FamiliarPants: Familiar Pants
+	FamiliarPants: Familiar Trousers
 	// FamiliarWig: Familiar Wig
 	// DemonScythe: Demon Scythe
 	// NightsEdge: Night's Edge
@@ -13532,7 +13532,7 @@ ItemName: {
 	// AntlionMandible: Antlion Mandible
 	// IllegalGunParts: Illegal Gun Parts
 	// TheDoctorsShirt: The Doctor's Shirt
-	// TheDoctorsPants: The Doctor's Pants
+	TheDoctorsPants: The Doctor's Trousers
 	// GoldenKey: Golden Key
 	// ShadowChest: Shadow Chest
 	// ShadowKey: Shadow Key
@@ -13556,7 +13556,7 @@ ItemName: {
 	// CookingPot: Cooking Pot
 	// Safe: Safe
 	// SkullLantern: Skull Lantern
-	// TrashCan: Trash Can
+	TrashCan: Rubbish Bin
 	// PlatinumBow: Platinum Bow
 	// PlatinumHammer: Platinum Hammer
 	// PlatinumAxe: Platinum Axe
@@ -13669,7 +13669,7 @@ ItemName: {
 	// PearlstoneBlock: Pearlstone Block
 	// FlamingArrow: Flaming Arrow
 	// MiningShirt: Mining Shirt
-	// MiningPants: Mining Pants
+	MiningPants: Mining Trousers
 	// PearlstoneBrick: Pearlstone Brick
 	// IridescentBrick: Iridescent Brick
 	// MudstoneBlock: Mudstone Brick
@@ -13773,11 +13773,11 @@ ItemName: {
 	// CrystalShard: Crystal Shard
 	// ClownHat: Clown Hat
 	// ClownShirt: Clown Shirt
-	// ClownPants: Clown Pants
+	ClownPants: Clown Trousers
 	// Flamethrower: Flamethrower
 	// Bell: Bell
 	// Harp: Harp
-	// Wrench: Red Wrench
+	Wrench: Red Spanner
 	// JestersArrow: Jester's Arrow
 	// WireCutter: Wire Cutter
 	// ActiveStoneBlock: Active Stone Block
@@ -13867,7 +13867,7 @@ ItemName: {
 	// SantaHat: Santa Hat
 	// SantaShirt: Santa Shirt
 	// CorruptSeeds: Corrupt Seeds
-	// SantaPants: Santa Pants
+	SantaPants: Santa Trousers
 	// GreenCandyCaneBlock: Green Candy Cane Block
 	// GreenCandyCaneWall: Green Candy Cane Wall
 	// SnowBlock: Snow Block
@@ -14104,7 +14104,7 @@ ItemName: {
 	// TheRottedFork: The Rotted Fork
 	// EskimoHood: Snow Hood
 	// EskimoCoat: Snow Coat
-	// EskimoPants: Snow Pants
+	EskimoPants: Snow Trousers
 	// LivingWoodChair: Living Wood Chair
 	// CactusChair: Cactus Chair
 	// BoneChair: Bone Chair
@@ -14144,18 +14144,18 @@ ItemName: {
 	// SteampunkHat: Steampunk Hat
 	// GrapplingHook: Grappling Hook
 	// SteampunkShirt: Steampunk Shirt
-	// SteampunkPants: Steampunk Pants
+	SteampunkPants: Steampunk Trousers
 	// BeeHat: Bee Hat
 	// BeeShirt: Bee Shirt
-	// BeePants: Bee Pants
+	BeePants: Bee Trousers
 	// WorldBanner: World Banner
 	// SunBanner: Sun Banner
 	// GravityBanner: Gravity Banner
 	// PharaohsMask: Pharaoh's Mask
 	// Actuator: Actuator
 	// Chain: Chain
-	// BlueWrench: Blue Wrench
-	// GreenWrench: Green Wrench
+	BlueWrench: Blue Spanner
+	GreenWrench: Green Spanner
 	// BluePressurePlate: Blue Pressure Plate
 	// YellowPressurePlate: Yellow Pressure Plate
 	// DiscountCard: Discount Card
@@ -14177,13 +14177,13 @@ ItemName: {
 	// PiggyBank: Piggy Bank
 	// MummyMask: Mummy Mask
 	// MummyShirt: Mummy Shirt
-	// MummyPants: Mummy Pants
+	MummyPants: Mummy Trousers
 	// CowboyHat: Cowboy Hat
 	// CowboyJacket: Cowboy Jacket
-	// CowboyPants: Cowboy Pants
+	CowboyPants: Cowboy Trousers
 	// PirateHat: Pirate Hat
 	// PirateShirt: Pirate Shirt
-	// PiratePants: Pirate Pants
+	PiratePants: Pirate Trousers
 	// VikingHelmet: Viking Helmet
 	// MiningHelmet: Mining Helmet
 	// CrimtaneOre: Crimtane Ore
@@ -14297,7 +14297,7 @@ ItemName: {
 	// PinkEskimoHood: Pink Snow Hood
 	// PinkEskimoCoat: Pink Snow Coat
 	// Minishark: Minishark
-	// PinkEskimoPants: Pink Snow Pants
+	PinkEskimoPants: Pink Snow Trousers
 	// PinkThread: Pink Thread
 	// ManaRegenerationBand: Mana Regeneration Band
 	// SandstorminaBalloon: Sandstorm in a Balloon
@@ -14527,7 +14527,7 @@ ItemName: {
 	// ChlorophyteDye: Chlorophyte Dye
 	// ClingerStaff: Clinger Staff
 	// ClothierJacket: Clothier's Jacket
-	// ClothierPants: Clothier's Pants
+	ClothierPants: Clothier's Trousers
 	// Code1: Code 1
 	// Code2: Code 2
 	// CogWall: Cog Wall
@@ -14687,7 +14687,7 @@ ItemName: {
 	// Fake_WaterChest: Trapped Water Chest
 	// Fake_WebCoveredChest: Trapped Web Covered Chest
 	// FalconBlade: Falcon Blade
-	// FallenTuxedoPants: Fallen Tuxedo Pants
+	FallenTuxedoPants: Fallen Tuxedo Trousers
 	// FallenTuxedoShirt: Fallen Tuxedo Shirt
 	// FancyDishes: Fancy Dishes
 	// FetidBaghnakhs: Fetid Baghnakhs
@@ -14897,7 +14897,7 @@ ItemName: {
 	// HopliteStatue: Hoplite Statue
 	// HuntressBuckler: Huntress's Buckler
 	// HuntressJerkin: Huntress's Jerkin
-	// HuntressPants: Huntress's Pants
+	HuntressPants: Huntress's Trousers
 	// HuntressWig: Huntress's Wig
 	// IceMirror: Ice Mirror
 	// IceTortoiseBanner: Ice Tortoise Banner
@@ -15040,7 +15040,7 @@ ItemName: {
 	// MartianConduitPlating: Martian Conduit Plating
 	// MartianConduitWall: Martian Conduit Wall
 	// MartianCostumeMask: Martian Costume Mask
-	// MartianCostumePants: Martian Costume Pants
+	MartianCostumePants: Martian Costume Trousers
 	// MartianCostumeShirt: Martian Costume Shirt
 	// MartianDoor: Martian Door
 	// MartianDresser: Martian Dresser
@@ -15058,7 +15058,7 @@ ItemName: {
 	// MartianTable: Martian Table
 	// MartianTableLamp: Martian Table Lamp
 	// MartianUniformHelmet: Martian Uniform Helmet
-	// MartianUniformPants: Martian Uniform Pants
+	MartianUniformPants: Martian Uniform Trousers
 	// MartianUniformTorso: Martian Uniform Torso
 	// MartianWalkerBanner: Martian Walker Banner
 	// MartianWorkBench: Martian Work Bench
@@ -15103,7 +15103,7 @@ ItemName: {
 	// MoneyTrough: Money Trough
 	// MonkBelt: Monk's Belt
 	// MonkBrows: Monk's Bushy Brow Bald Cap
-	// MonkPants: Monk's Pants
+	MonkPants: Monk's Trousers
 	// MonkShirt: Monk's Shirt
 	// MoonglowPlanterBox: Moonglow Planter Box
 	// MoonlordArrow: Luminite Arrow
@@ -15116,7 +15116,7 @@ ItemName: {
 	// MothronBanner: Mothron Banner
 	// MothronWings: Mothron Wings
 	// MouseStatue: Mouse Statue
-	// MulticolorWrench: Multicolor Wrench
+	MulticolorWrench: Multicolour Spanner
 	// MushroomBathtub: Mushroom Bathtub
 	// MushroomBed: Mushroom Bed
 	// MushroomBench: Mushroom Bench
@@ -15176,7 +15176,7 @@ ItemName: {
 	// ObsidianHelm: Obsidian Outlaw Hat
 	// ObsidianLamp: Obsidian Lamp
 	// ObsidianLantern: Obsidian Lantern
-	// ObsidianPants: Obsidian Pants
+	ObsidianPants: Obsidian Trousers
 	// ObsidianShirt: Obsidian Longcoat
 	// ObsidianSink: Obsidian Sink
 	// OnyxBlaster: Onyx Blaster
@@ -15549,7 +15549,7 @@ ItemName: {
 	// TargetDummy: Target Dummy
 	// TartarSauce: Tartar Sauce
 	// TaxCollectorHat: Tax Collector's Hat
-	// TaxCollectorPants: Tax Collector's Pants
+	TaxCollectorPants: Tax Collector's Trousers
 	// TaxCollectorsStickOfDoom: Classy Cane
 	// TaxCollectorSuit: Tax Collector's Suit
 	// TealString: Teal String
@@ -15594,7 +15594,7 @@ ItemName: {
 	// UnicornStatue: Unicorn Statue
 	// UnicornWispDye: Unicorn Wisp Dye
 	// ValkyrieYoyo: Valkyrie Yoyo
-	// Valor: Valor
+	Valor: Valour
 	// ViciousMushroom: Vicious Mushroom
 	// ViciousPowder: Vicious Powder
 	// VineRope: Vine Rope
@@ -15660,9 +15660,9 @@ ItemName: {
 	// YellowCounterweight: Yellow Counterweight
 	// YellowPhasesaber: Yellow Phasesaber
 	// YellowString: Yellow String
-	// YellowWrench: Yellow Wrench
+	YellowWrench: Yellow Spanner
 	// Yoraiz0rDarkness: Yoraiz0r's Scowl
-	// Yoraiz0rHead: Yoraiz0r's Recolored Goggles
+	Yoraiz0rHead: Yoraiz0r's Recoloured Goggles
 	// Yoraiz0rPants: Yoraiz0r's Skirt
 	// Yoraiz0rShirt: Yoraiz0r's Uniform
 	// Yoraiz0rWings: Yoraiz0r's Spell
@@ -15723,7 +15723,7 @@ ItemName: {
 	// HuntressAltPants: Red Riding Leggings
 	// MonkAltHead: Shinobi Infiltrator's Helmet
 	// MonkAltShirt: Shinobi Infiltrator's Torso
-	// MonkAltPants: Shinobi Infiltrator's Pants
+	MonkAltPants: Shinobi Infiltrator's Trousers
 	// DD2ElderCrystalStand: Eternia Crystal Stand
 	// BetsyWings: Betsy's Wings
 	// CrystalChest: Crystal Chest
@@ -15863,7 +15863,7 @@ ItemName: {
 	// CreamSoda: Cream Soda
 	// Escargot: Escargot
 	// FriedEgg: Fried Egg
-	// Fries: Fries
+	Fries: Chips
 	// GoldenDelight: Golden Delight
 	// Grapes: Grapes
 	// GrilledSquirrel: Grilled Squirrel
@@ -15872,7 +15872,7 @@ ItemName: {
 	// Milkshake: Milkshake
 	// Nachos: Nachos
 	// Pizza: Pizza
-	// PotatoChips: Potato Chips
+	PotatoChips: Crisps
 	// RoastedBird: Roasted Bird
 	// RoastedDuck: Roasted Duck
 	// SauteedFrogLegs: Sauteed Frog Legs
@@ -16158,7 +16158,7 @@ ItemName: {
 	// ArrowSign: Arrow Sign
 	// PaintedArrowSign: Painted Arrow Sign
 	// GameMasterShirt: Master Gamer's Jacket
-	// GameMasterPants: Master Gamer's Pants
+	GameMasterPants: Master Gamer's Trousers
 	// StarPrincessCrown: Star Princess Crown
 	// StarPrincessDress: Star Princess Dress
 	// SanguineStaff: Sanguine Staff
@@ -16208,8 +16208,8 @@ ItemName: {
 	// Grebe: Grebe
 	// Rat: Rat
 	// RatCage: Rat Cage
-	// PaperAirplaneA: Paper Airplane
-	// PaperAirplaneB: White Paper Airplane
+	PaperAirplaneA: Paper Aeroplane
+	PaperAirplaneB: White Paper Aeroplane
 	// LadybugCage: Ladybug Cage
 	// BloodRainBow: Blood Rain Bow
 	// CombatBook: Advanced Combat Techniques
@@ -16430,7 +16430,7 @@ ItemName: {
 	// Fedora: Fedora
 	// ChefHat: Chef Hat
 	// ChefShirt: Chef Uniform
-	// ChefPants: Chef Pants
+	ChefPants: Chef Trousers
 	// MarbleColumn: Marble Column
 	// PlasmaLamp: Plasma Lamp
 	// HellCake: Slice of Hell Cake
@@ -16538,7 +16538,7 @@ ItemName: {
 	// QuadBarrelShotgun: Quad-Barrel Shotgun
 	// FuneralHat: Funeral Hat
 	// FuneralCoat: Funeral Coat
-	// FuneralPants: Funeral Pants
+	FuneralPants: Funeral Trousers
 	// TragicUmbrella: Tragic Umbrella
 	// VictorianGothHat: Victorian Goth Hat
 	// VictorianGothDress: Victorian Goth Dress
@@ -16572,8 +16572,8 @@ ItemName: {
 	// DrManFlyLabCoat: Dr. Man Fly's Lab Coat
 	// ButcherMask: Butcher Mask
 	// ButcherApron: Butcher's Bloodstained Apron
-	// ButcherPants: Butcher's Bloodstained Pants
-	// Football: Football
+	ButcherPants: Butcher's Bloodstained Trousers
+	Football: American Football
 	// CoffinMinecart: Coffin Minecart
 	// FoodBarbarianWings: FoodBarbarian's Tattered Dragon Wings
 	// FoodBarbarianHelm: FoodBarbarian's Horned Helm
@@ -16605,13 +16605,13 @@ ItemName: {
 	// LightningCarrot: Lightning Carrot
 	// MushroomHat: Mushroom Hat
 	// MushroomVest: Mushroom Vest
-	// MushroomPants: Mushroom Pants
+	MushroomPants: Mushroom Trousers
 	// HunterCloak: Hunter Cloak
 	// ZapinatorGray: Gray Zapinator
 	// ZapinatorOrange: Orange Zapinator
 	// TreeGlobe: Tree Globe
 	// WorldGlobe: World Globe
-	// CombatWrench: Combat Wrench
+	CombatWrench: Combat Spanner
 	// PaintedHorseSaddle: Dusty Rawhide Saddle
 	// MajesticHorseSaddle: Royal Gilded Saddle
 	// DarkHorseSaddle: Black Studded Saddle
@@ -16812,7 +16812,7 @@ ItemName: {
 	// MusicBoxEmpressOfLight: Music Box (Empress Of Light)
 	// CrystalNinjaHelmet: Crystal Assassin Hood
 	// CrystalNinjaChestplate: Crystal Assassin Shirt
-	// CrystalNinjaLeggings: Crystal Assassin Pants
+	CrystalNinjaLeggings: Crystal Assassin Trousers
 	// QueenSlimeMountSaddle: Gelatinous Pillion
 	// QueenSlimeHook: Hook of Dissonance
 	// Smolstar: Blade Staff
@@ -16889,14 +16889,14 @@ ItemName: {
 	// TimelessTravelerBottom: Timeless Traveler's Footwear
 	// FloretProtectorHelmet: Floret Protector Helmet
 	// FloretProtectorChestplate: Floret Protector Shirt
-	// FloretProtectorLegs: Floret Protector Pants
+	FloretProtectorLegs: Floret Protector Trousers
 	// CapricornMask: Capricorn Helmet
 	// CapricornChestplate: Capricorn Chestplate
 	// CapricornLegs: Capricorn Hooves
 	// CapricornTail: Capricorn Tail
 	// TVHeadMask: Video Visage
-	// TVHeadSuit: Lazer Blazer
-	// TVHeadPants: Pinstripe Pants
+	TVHeadSuit: Laser Blazer
+	TVHeadPants: Pinstripe Trousers
 	// PrincessWeapon: Resonance Scepter
 	// FlinxFurCoat: Flinx Fur Coat
 	// FlinxStaff: Flinx Staff
@@ -16915,7 +16915,7 @@ ItemName: {
 	// RoyalScepter: Royal Scepter
 	// GlassSlipper: Glass Slipper
 	// PrinceUniform: Prince Uniform
-	// PrincePants: Prince Pants
+	PrincePants: Prince Trousers
 	// PrinceCape: Prince Cape
 	// PottedCrystalPlantFern: Potted Crystal Fern
 	// PottedCrystalPlantSpiral: Potted Crystal Spiral
@@ -17229,7 +17229,7 @@ ItemName: {
 	// ShimmerBrickWall: Aetherium Brick Wall
 	// LincolnsHoodie: Raynebro's Hoodie
 	// LincolnsHood: Raynebro's Hood
-	// LincolnsPants: Raynebro's Pants
+	LincolnsPants: Raynebro's Trousers
 	// SandSolution: Yellow Solution
 	// SnowSolution: White Solution
 	// DirtSolution: Brown Solution
@@ -17273,7 +17273,7 @@ ItemName: {
 	// PoopBlock: Poo
 	// PoopWall: Poo Wall
 	// ShellphoneDummy: Shellphone
-	// Fertilizer: Fertilizer
+	Fertilizer: Fertiliser
 	// LavaMossBlock: Lava Moss Brick
 	// ArgonMossBlock: Argon Moss Brick
 	// KryptonMossBlock: Krypton Moss Brick
@@ -17327,16 +17327,16 @@ ItemTooltip: {
 	// ShadowScalemail: 5% increased critical strike chance
 	// ShadowHelmet: 5% increased critical strike chance
 	// NightmarePickaxe: Able to mine Hellstone
-	/* Paintbrush:
+	Paintbrush:
 		'''
-		Used with paint to color blocks
+		Used with paint to colour blocks
 		Can also apply coatings
-		''' */
-	/* PaintRoller:
 		'''
-		Used with paint to color walls
+	PaintRoller:
+		'''
+		Used with paint to colour walls
 		Can also apply coatings
-		''' */
+		'''
 	// ManaCrystal: Permanently increases maximum mana by 20
 	/* PaintScraper:
 		'''
@@ -17653,13 +17653,13 @@ ItemTooltip: {
 	// BloodySpine: Summons the Brain of Cthulhu
 	// Ichor: "'The blood of gods'"
 	// IchorTorch: Can be placed in water
-	// IchorArrow: Decreases target's defense
-	// IchorBullet: Decreases target's defense
-	/* GoldenShower:
+	IchorArrow: Decreases target's defence
+	IchorBullet: Decreases target's defence
+	GoldenShower:
 		'''
 		Sprays a shower of ichor
-		Decreases target's defense
-		''' */
+		Decreases target's defence
+		'''
 	// ImbuingStation: Used to craft weapon imbuement flasks
 	// EmptyBullet: Used to craft various types of ammo
 	// ShadowbeamStaff: Creates a shadow beam that bounces off walls
@@ -17689,16 +17689,16 @@ ItemTooltip: {
 	// CrimsonKey: Unlocks a Crimson Chest in the dungeon
 	// HallowedKey: Unlocks a Hallowed Chest in the dungeon
 	// FrozenKey: Unlocks an Ice Chest in the dungeon
-	/* SpectrePaintbrush:
+	SpectrePaintbrush:
 		'''
-		Used with paint to color blocks
+		Used with paint to colour blocks
 		Can also apply coatings
-		''' */
-	/* SpectrePaintRoller:
 		'''
-		Used with paint to color walls
+	SpectrePaintRoller:
+		'''
+		Used with paint to colour walls
 		Can also apply coatings
-		''' */
+		'''
 	/* SpectrePaintScraper:
 		'''
 		Used to remove paint or coatings
@@ -17904,11 +17904,11 @@ ItemTooltip: {
 	// RedRyder: "'Don't shoot your eye out!'"
 	// FestiveWings: "{$CommonItemTooltip.FlightAndSlowfall}"
 	// BladeofGrass: Has a chance to poison enemies
-	/* ElfMelter:
+	ElfMelter:
 		'''
 		Uses gel for ammo
-		Ignores 15 points of enemy Defense
-		''' */
+		Ignores 15 points of enemy Defence
+		'''
 	// ReindeerBells: Summons a rideable reindeer
 	// CnadyCanePickaxe: Can mine Meteorite
 	// HandWarmer: Provides immunity to chill and freezing effects
@@ -18031,7 +18031,7 @@ ItemTooltip: {
 		Increases maximum mana by 20
 		6% increased magic critical strike chance
 		''' */
-	// NeonTetra: "'Its colorful scales could sell well.'"
+	NeonTetra: "'Its colourful scales could sell well.'"
 	// GoldenCarp: Quite shiny. This will probably sell well.
 	// MiningPotion: Increases mining speed by 25%
 	// HeartreachPotion: Increases pickup range for life hearts
@@ -18259,11 +18259,11 @@ ItemTooltip: {
 	// IceRod: Summons a block of ice
 	// NeptunesShell: Transforms the holder into merfolk when entering water
 	// MagicMirror: Gaze in the mirror to return home
-	/* Flamethrower:
+	Flamethrower:
 		'''
 		Uses gel for ammo
-		Ignores 15 points of enemy Defense
-		''' */
+		Ignores 15 points of enemy Defence
+		'''
 	// Wrench: Places red wire
 	// WireCutter: Removes wire
 	// CrystalBullet: Creates crystal shards on impact
@@ -18392,11 +18392,11 @@ ItemTooltip: {
 	// FallenStar: Disappears after the sunrise
 	// Seaweed: Summons a pet turtle
 	// FairyWings: "{$CommonItemTooltip.FlightAndSlowfall}"
-	/* Clentaminator:
+	Clentaminator:
 		'''
 		Creates and destroys biomes when sprayed
-		Uses colored solution
-		''' */
+		Uses coloured solution
+		'''
 	/* GreenSolution:
 		'''
 		Used by the Clentaminator
@@ -18425,7 +18425,7 @@ ItemTooltip: {
 	// HarpyWings: "{$CommonItemTooltip.FlightAndSlowfall}"
 	// BoneWings: "{$CommonItemTooltip.FlightAndSlowfall}"
 	// Hammush: Strong enough to destroy Demon Altars
-	// NettleBurst: Ignores 10 points of enemy Defense
+	NettleBurst: Ignores 10 points of enemy Defence
 	// CrimsonHelmet: 3% increased damage
 	// CrimsonScalemail: 3% increased damage
 	// CrimsonGreaves: 3% increased damage
@@ -18456,7 +18456,7 @@ ItemTooltip: {
 	// WaterWalkingBoots: Provides the ability to walk on water & honey
 	// MiningHelmet: Provides light when worn
 	// AdhesiveBandage: Immunity to Bleeding
-	// ArmorPolish: Immunity to Broken Armor
+	ArmorPolish: Immunity to Broken Armour
 	// Bezoar: Immunity to Poison
 	// Blindfold: Immunity to Darkness
 	// FastClock: Immunity to Slow
@@ -18481,7 +18481,7 @@ ItemTooltip: {
 		melee speed, critical strike chance, life regeneration,
 		defense, mining speed, and minion knockback
 		''' */
-	// ArmorBracing: Immunity to Weakness and Broken Armor
+	ArmorBracing: Immunity to Weakness and Broken Armour
 	// MedicatedBandage: Immunity to Poison and Bleeding
 	// ThePlan: Immunity to Slow and Confusion
 	// CountercurseMantra: Immunity to Silence and Curse
@@ -18642,11 +18642,11 @@ ItemTooltip: {
 		''' */
 	// BalloonPufferfish: Increases jump height
 	// BeesKnees: Wooden arrows turn into a column of bees
-	/* BejeweledValkyrieBody:
+	BejeweledValkyrieBody:
 		'''
 		{$CommonItemTooltip.DevItem}
-		Bejeweled and elegant for soaring through the thundering skies
-		''' */
+		Bejewelled and elegant for soaring through the thundering skies
+		'''
 	/* BejeweledValkyrieHead:
 		'''
 		{$CommonItemTooltip.DevItem}
@@ -18725,11 +18725,11 @@ ItemTooltip: {
 	// CrimsonFishingCrate: "{$CommonItemTooltip.RightClickToOpen}"
 	// CrimsonHeart: Summons a heart to provide light
 	// CrystalSerpent: Shoots an explosive crystal charge
-	/* CrystalVileShard:
+	CrystalVileShard:
 		'''
 		Summons a massive crystal spike
-		Ignores 10 points of enemy Defense
-		''' */
+		Ignores 10 points of enemy Defence
+		'''
 	// CursedCampfire: Life regen is increased when near a campfire
 	// DaedalusStormbow: Shoots arrows from the sky
 	// DayBreak: "'Rend your foes asunder with a spear of light!'"
@@ -18809,7 +18809,7 @@ ItemTooltip: {
 		{$CommonItemTooltip.RightClickToOpen}
 		Requires a Golden Key
 		''' */
-	// LogicGateLamp_Faulty: Place this on logic gate lamps to randomize the activation
+	LogicGateLamp_Faulty: Place this on logic gate lamps to randomise the activation
 	// LogicGateLamp_Off: Place this on logic gates to add checks
 	// LogicGateLamp_On: Place this on logic gates to add checks
 	/* LogicGate_NOR:
@@ -18960,12 +18960,12 @@ ItemTooltip: {
 		''' */
 	// Radar: Detects enemies around you
 	// RainbowCampfire: Life regen is increased when near a campfire
-	/* RainbowCrystalStaff:
+	RainbowCrystalStaff:
 		'''
 		{$CommonItemTooltip.Sentry}
 		Summons a radiant crystal that banishes your enemies
-		'The colors, Duke, the colors!'
-		''' */
+		'The colours, Duke, the colours!'
+		'''
 	// RazorbladeTyphoon: Casts fast moving razorwheels
 	// RedsYoyo: "{$CommonItemTooltip.DevItem}"
 	// REK: Displays number of monsters, kill count, and rare creatures
@@ -18983,8 +18983,8 @@ ItemTooltip: {
 		Increases jump height
 		Allows the holder to double jump
 		''' */
-	// SharkToothNecklace: Increases armor penetration by 5
-	// SharpeningStation: Increases armor penetration for melee weapons
+	SharkToothNecklace: Increases armour penetration by 5
+	SharpeningStation: Increases armour penetration for melee weapons
 	// ShinyStone: Greatly increases life regen when not moving
 	// ShrimpyTruffle: Attracts a legendary creature which flourishes in water & combat
 	// SilkRope: Can be climbed on
@@ -19153,7 +19153,7 @@ ItemTooltip: {
 		{$CommonItemTooltip.FlightAndSlowfall}
 		{$CommonItemTooltip.PressDownToHover}
 		''' */
-	// WireBulb: Lights up bulbs for each wire color
+	WireBulb: Lights up bulbs for each wire colour
 	/* WireKite:
 		'''
 		Allows ultimate control over wires!
@@ -19609,7 +19609,7 @@ ItemTooltip: {
 	// FlaskofCursedFlames: Melee and Whip attacks inflict enemies with cursed flames
 	// FlaskofFire: Melee and Whip attacks set enemies on fire
 	// FlaskofGold: Melee and Whip attacks make enemies drop more gold
-	// FlaskofIchor: Melee and Whip attacks decrease enemies defense
+	FlaskofIchor: Melee and Whip attacks decrease enemies defence
 	// FlaskofNanites: Melee and Whip attacks confuse enemies
 	// FlaskofParty: Melee and Whip attacks cause confetti to appear
 	// FlaskofPoison: Melee and Whip attacks poison enemies
@@ -19661,14 +19661,14 @@ ItemTooltip: {
 		''' */
 	// DD2ExplosiveTrapT2Popper: "{$ItemTooltip.DD2ExplosiveTrapT1Popper}"
 	// DD2ExplosiveTrapT3Popper: "{$ItemTooltip.DD2ExplosiveTrapT1Popper}"
-	/* DD2LightningAuraT1Popper:
+	DD2LightningAuraT1Popper:
 		'''
 		{$CommonItemTooltip.Sentry}
 		An aura that repeatedly zaps enemies that go inside
-		Aura damage penetrates enemy defense
+		Aura damage penetrates enemy defence
 		Hits quickly at the expense of 50% tag damage
 		{$CommonItemTooltip.EtherianManaCost10}
-		''' */
+		'''
 	// DD2LightningAuraT2Popper: "{$ItemTooltip.DD2LightningAuraT1Popper}"
 	// DD2LightningAuraT3Popper: "{$ItemTooltip.DD2LightningAuraT1Popper}"
 	// DD2PetGato: Summons a pet gato
@@ -19755,7 +19755,7 @@ ItemTooltip: {
 		20% increased summon damage and melee critical strike chance
 		30% increased movement speed
 		''' */
-	// DD2EnergyCrystal: Often used to manifest one's will as a physical form of defense
+	DD2EnergyCrystal: Often used to manifest one's will as a physical form of defence
 	/* ArkhalisHat:
 		'''
 		{$CommonItemTooltip.DevItem}
@@ -19920,11 +19920,11 @@ ItemTooltip: {
 		20% chance not to consume arrows
 		Enemies are less likely to target you
 		''' */
-	/* StingerNecklace:
+	StingerNecklace:
 		'''
-		Increases armor penetration by 5
+		Increases armour penetration by 5
 		Releases bees and douses the user in honey when damaged
-		''' */
+		'''
 	/* UltrabrightHelmet:
 		'''
 		Improves vision and provides light when worn
@@ -19940,8 +19940,8 @@ ItemTooltip: {
 		Increases mining speed by 25%
 		'Ancient problems require ancient solutions'
 		''' */
-	// Mannequin: <right> to customize attire
-	// Womannquin: <right> to customize attire
+	Mannequin: <right> to customise attire
+	Womannquin: <right> to customise attire
 	// HatRack: <right> when placed to display hats and helmets
 	// DeadMansChest: Activates when opened
 	// GolfBall: "{$CommonItemTooltip.GolfBall}"
@@ -20720,7 +20720,7 @@ ItemTooltip: {
 	/* SafemanDressLeggings:
 		'''
 		{$CommonItemTooltip.DevItem}
-		'Almost like pants'
+		'Almost like trousers'
 		''' */
 	/* GroxTheGreatWings:
 		'''
@@ -21114,13 +21114,13 @@ ItemTooltip: {
 		Grants infinite wing and rocket boot flight
 		Increases flight and jump mobility
 		''' */
-	/* Smolstar:
+	Smolstar:
 		'''
 		Summons an Enchanted Dagger to fight for you
-		Ignores a substantial amount of enemy defense
+		Ignores a substantial amount of enemy defence
 		Hits quickly at the expense of 25% tag damage
 		'Don't let their small size fool you'
-		''' */
+		'''
 	// QueenSlimeHook: Teleports you to the location of the hook
 	// VolatileGelatin: Releases volatile gelatin periodically that damages enemies
 	/* TerrasparkBoots:
@@ -21363,17 +21363,17 @@ ItemTooltip: {
 		'Your most loyal travel companion. The glowing orb is soft and welcoming.'
 		Concept by crowflux
 		''' */
-	/* RoninShirt:
+	RoninShirt:
 		'''
-		'Incredibly old, yet unnaturally durable. Who knows how long it traveled just to find you.'
+		'Incredibly old, yet unnaturally durable. Who knows how long it travelled just to find you.'
 		Concept by crowflux
-		''' */
+		'''
 	/* RoninPants:
 		'''
 		'It constantly reminds you that there is more than one path to the top of the mountain.'
 		Concept by crowflux
 		''' */
-	// RainbowCursor: Causes your mouse cursor to have shifting rainbow colors
+	RainbowCursor: Causes your mouse cursor to have shifting rainbow colours
 	/* BoneWhip:
 		'''
 		7 summon tag damage
@@ -21458,11 +21458,11 @@ ItemTooltip: {
 		Converts bullets into random stuff
 		'ALLOWS WIRELESS TRANSFER OF INJURY!'
 		''' */
-	/* WeatherPain:
+	WeatherPain:
 		'''
-		Ignores 10 points of enemy Defense
+		Ignores 10 points of enemy Defence
 		'What a pane... heh'
-		''' */
+		'''
 	/* HoundiusShootius:
 		'''
 		{$CommonItemTooltip.Sentry}
@@ -21510,7 +21510,7 @@ ItemTooltip: {
 		Hold Up to reach higher
 		''' */
 	// Musket: "'I have to be ready, said the minuteman'"
-	// WaspGun: Ignores 10 points of enemy Defense
+	WaspGun: Ignores 10 points of enemy Defence
 	/* ResplendentDessert:
 		'''
 		Summons both Slime Royals
@@ -21531,19 +21531,19 @@ ItemTooltip: {
 	// DD2WyvernBanner: "{$CommonItemTooltip.BannerBonusReduced}{$NPCName.DD2WyvernT1}"
 	// DD2JavelinThrowerBanner: "{$CommonItemTooltip.BannerBonusReduced}{$NPCName.DD2JavelinstT1}"
 	// DD2LightningBugBanner: "{$CommonItemTooltip.BannerBonusReduced}{$NPCName.DD2LightningBugT3}"
-	/* PortalGun:
+	PortalGun:
 		'''
-		Creates a pair of portals that can be traveled through.
+		Creates a pair of portals that can be travelled through.
 		Use <left> & <right> to place portals.
 		Increases momentum and falling speed.
 		'Speedy thing goes in, speedy thing comes out.'
-		''' */
-	/* Clentaminator2:
+		'''
+	Clentaminator2:
 		'''
 		Creates and destroys biomes when sprayed
-		Uses colored solution
+		Uses coloured solution
 		33% chance to save ammo
-		''' */
+		'''
 	// Outcast: "{$PaintingArtist.darthmorf}"
 	// FairyGuides: "{$PaintingArtist.Serenity}"
 	// AHorribleNightforAlchemy: "{$PaintingArtist.Altermaven}"
@@ -21634,11 +21634,11 @@ ItemTooltip: {
 		{$CommonItemTooltip.MinorStats}
 		'Please Recycle'
 		''' */
-	/* JunimoPetItem:
+	JunimoPetItem:
 		'''
 		Summons a Junimo
-		'A mysterious fruit from another world. The flavor is like a dream...'
-		''' */
+		'A mysterious fruit from another world. The flavour is like a dream...'
+		'''
 	// SpicyPepper: "{$CommonItemTooltip.MinorStats}"
 	// Pomegranate: "{$CommonItemTooltip.MinorStats}"
 	/* MoonGlobe:
@@ -21827,7 +21827,7 @@ ItemTooltip: {
 		'Contains offensive and defensive fighting techniques, volume two!'
 		''' */
 	// AegisCrystal: Permanently boosts life regeneration
-	// AegisFruit: Permanently increases defense
+	AegisFruit: Permanently increases defence
 	// ArcaneCrystal: Permanently increases mana regeneration
 	// GalaxyPearl: Permanently increases luck
 	// GummyWorm: Permanently increases fishing skill
@@ -22079,7 +22079,7 @@ LegacyWorldGen: {
 
 LegacyDialog: {
 	// 1: I hope a scrawny kid like you isn't all that is standing between us and Cthulhu's Eye.
-	// 2: Look at that shoddy armor you're wearing. Better buy some more healing potions.
+	2: Look at that shoddy armour you're wearing. Better buy some more healing potions.
 	// 3: I feel like an evil presence is watching me.
 	// 4: Sword beats paper! Get one today.
 	// 5: You want apples? You want carrots? You want pineapples? We got torches.
@@ -22088,7 +22088,7 @@ LegacyDialog: {
 	// 8: You have no idea how much Dirt Blocks sell for overseas.
 	// 9: Ah, they will tell tales of {PlayerName} some day... good ones I'm sure.
 	// 10: Check out my dirt blocks; they are extra dirty.
-	// 11: Boy, that sun is hot! I do have some perfectly ventilated armor.
+	11: Boy, that sun is hot! I do have some perfectly ventilated armour.
 	// 12: The sun is high, but my prices are not.
 	// 13: Oh, great. I can hear {Mechanic} and {Nurse} arguing from here.
 	// 14: Have you seen Chith...Shith.. Chat... The big eye?
@@ -22140,14 +22140,14 @@ LegacyDialog: {
 	// 60: I want what {Nurse} is sellin'. What do you mean, she doesn't sell anything?
 	// 61: "{Dryad} is a looker.  Too bad she's such a prude."
 	// 62: Don't bother with {Demolitionist}, I've got all you need right here.
-	// 63: What's {Demolitionist}'s problem? Does he even realize we sell completely different stuff?
+	63: What's {Demolitionist}'s problem? Does he even realise we sell completely different stuff?
 	// 64: Man, it's a good night not to talk to anybody, don't you think, {PlayerName}?
 	// 65: I love nights like tonight.  There is never a shortage of things to kill!
 	// 66: I see you're eyeballin' the Minishark.. You really don't want to know how it was made.
 	// 67: Hey, this ain't a movie, pal. Ammo is extra.
 	// 68: Keep your hands off my gun, buddy!
 	// 69: Have you tried using purification powder on the ebonstone of the corruption?
-	// 70: I wish {ArmsDealer} would stop flirting with me. Doesn't he realize I'm 500 years old?
+	70: I wish {ArmsDealer} would stop flirting with me. Doesn't he realise I'm 500 years old?
 	// 71: Why does {Merchant} keep trying to sell me angel statues? Everyone knows that they don't do anything.
 	// 72: Have you seen the old man walking around the dungeon? He doesn't look well at all...
 	// 73: I sell what I want! If you don't like it, too bad.
@@ -22226,7 +22226,7 @@ LegacyDialog: {
 	// 146: Well, hi there, {Mechanic}! What can I do for you today?
 	// 147: Well, hi there, {Dryad}! What can I do for you today?
 	// 148: Want me to pull a coin from behind your ear? No? Ok.
-	// 149: Do you want some magic candy? No? Ok.
+	149: Do you want some magic sweets? No? Ok.
 	// 150: I make a rather enchanting hot chocolate if you'd be inter...No? Ok.
 	// 151: Are you here for a peek at my crystal ball?
 	// 152: Ever wanted an enchanted ring that turns rocks into slimes? Well neither did I.
@@ -22289,7 +22289,7 @@ LegacyDialog: {
 	// 209: There is treasure hidden all over the world. Some amazing things can be found deep underground!
 	// 210: Shadow orbs can usually be found in the chasms around corrupt areas. Smashing too many will unleash the Eater of Worlds. Defeating this foe may cause meteors to fall out of the sky!
 	// 211: You should focus on gathering more life crystals to increase your maximum life.
-	// 212: Your current equipment simply won't do. You need to make better armor.
+	212: Your current equipment simply won't do. You need to make better armour.
 	// 213: I think you are ready for your first major battle. Gather some lenses from the eyeballs at night and take them to a demon altar.
 	// 214: You will want to increase your life before facing your next challenge. Fifteen hearts should be enough.
 	// 215: The ebonstone in the corruption can be purified using some powder from a dryad, or it can be destroyed with explosives.
@@ -22297,7 +22297,7 @@ LegacyDialog: {
 	// 217: There is an old dungeon not far from here. Now would be a good time to go check it out.
 	// 218: You should make an attempt to max out your available life. Try to gather twenty hearts.
 	// 219: There are many treasures to be discovered in the jungle, if you are willing to dig deep enough.
-	// 220: The underworld is made of a material called hellstone. It's perfect for making weapons and armor.
+	220: The underworld is made of a material called hellstone. It's perfect for making weapons and armour.
 	// 221: When you are ready to challenge the keeper of the underworld, you will have to make a living sacrifice. Everything you need for it can be found in the underworld.
 	// 222: Make sure to smash any demon altar you can find. Something good is bound to happen if you do!
 	// 223: Souls can sometimes be gathered from fallen creatures in places of extreme light or dark.
@@ -22311,7 +22311,7 @@ LegacyDialog: {
 	// 231: As if living underground wasn't bad enough, jerks like you come in while I'm sleeping and steal my children.
 	// 232: Between you and me, {Dryad} is the only one I trust. She is the only one here who hasn't tried to eat me or use me in a potion.
 	// 233: I tried to lick myself the other day to see what the big deal was, everything started glowing blue.
-	// 234: Everytime I see the color blue, it makes me depressed and lazy.
+	234: Everytime I see the colour blue, it makes me depressed and lazy.
 	// 235: You haven't seen any pigs around here have you? My brother lost his leg to one.
 	// 236: Everyone in this town feels a bit off. I woke up to the clothier chewing on my foot last night.
 	// 237: I'll give you a discount on your wears if you can convince {Truffle} to come over for a...sizing.
@@ -22333,7 +22333,7 @@ LegacyDialog: {
 	// 254: Try swirly pink and purple, it works, I swear!
 	// 255: No, no, no... There's TONS of different grays! Don't get me started...
 	// 256: I hope it doesn't rain again until this paint dries. That would be a disaster!
-	// 257: I bring you the richest colors in exchange for your riches!
+	257: I bring you the richest colours in exchange for your riches!
 	// 258: My dear, what you're wearing is much too drab. You absolutely must take a lesson in dyeing your tired attire!
 	// 259: The only kind of wood I would bother dyeing is RICH Mahogany. Dyeing any other wood is such a waste.
 	// 260: You must do something about {Pirate}.  Everytime he comes over here, it takes me a week to get the smell off!
@@ -22390,7 +22390,7 @@ LegacyDialog: {
 	// 311: Did you even try to brush your hair today?
 	// 312: So a pixie cut, would you like to keep some lady burns?
 	// 313: I have no problem cleaning up ears and eyebrows, but I draw the line at nose hair.
-	// 314: Alright, you sit and marinate. I'll be back to rinse your color out in 25 minutes...
+	314: Alright, you sit and marinate. I'll be back to rinse your colour out in 25 minutes...
 	// 315: Thanks hun! Now I can finally do my hair.
 	// 316: I would have given you a free cut if you'd come earlier.
 	// 317: Don't go exploring with scissors, they said. You won't get trapped in a spider's web, they said!
@@ -22508,16 +22508,16 @@ LegacyMenu: {
 	// 32: Select difficulty
 	// 33: Shirt
 	// 34: Undershirt
-	// 35: Pants
+	35: Trousers
 	// 36: Shoes
 	// 37: Hair
-	// 38: Hair Color
-	// 39: Eye Color
-	// 40: Skin Color
-	// 41: Shirt Color
-	// 42: Undershirt Color
-	// 43: Pants Color
-	// 44: Shoe Color
+	38: Hair Colour
+	39: Eye Colour
+	40: Skin Colour
+	41: Shirt Colour
+	42: Undershirt Colour
+	43: Trousers Colour
+	44: Shoe Colour
 	// 45: Enter Character Name:
 	// 46: Delete
 	// 47: Create World
@@ -22528,7 +22528,7 @@ LegacyMenu: {
 	// 52: Parallax
 	// 53: Frame Skip Off
 	// 54: Frame Skip On
-	// 55: Lighting: Color
+	55: Lighting: Colour
 	// 56: Lighting: White
 	// 57: Lighting: Retro
 	// 58: Lighting: Trippy
@@ -22537,7 +22537,7 @@ LegacyMenu: {
 	// 61: Quality: Medium
 	// 62: Quality: Low
 	// 63: Video
-	// 64: Cursor Color
+	64: Cursor Colour
 	// 65: Volume
 	// 66: Controls
 	// 67: Autosave On
@@ -22682,7 +22682,7 @@ LegacyMenu: {
 	// 206: Invert Left Thumbstick Vertically
 	// 207: Invert Right Thumbstick Horizontally
 	// 208: Invert Right Thumbstick Vertical
-	// 209: Utilize
+	209: Utilise
 	// 210: Interface
 	// 211: Passwords: Visible
 	// 212: Passwords: Hidden
@@ -22690,7 +22690,7 @@ LegacyMenu: {
 	// 214: Smart Cursor Priority: Axe -> Pickaxe
 	// 215: Smart Block Placement: To Cursor
 	// 216: Smart Block Placement: Disabled
-	// 217: Border Color
+	217: Border Colour
 	// 218: Cursor
 	// 219: Controls
 	// 220: Activate Set Bonuses: Up
@@ -22943,11 +22943,11 @@ LegacyInterface: {
 	// 7: Housing
 	// 8: Housing Query
 	// 9: Accessory
-	// 10: Defense
+	10: Defence
 	// 11: Social
 	// 12: Helmet
 	// 13: Shirt
-	// 14: Pants
+	14: Trousers
 	// 15: platinum
 	// 16: gold
 	// 17: silver
@@ -23067,7 +23067,7 @@ LegacyChestType: {
 	// 3: Shadow Chest
 	// 4: Locked Shadow Chest
 	// 5: Barrel
-	// 6: Trash Can
+	6: Rubbish Bin
 	// 7: Ebonwood Chest
 	// 8: Rich Mahogany Chest
 	// 9: Pearlwood Chest
