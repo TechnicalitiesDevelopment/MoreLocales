@@ -22726,7 +22726,7 @@ LegacyMenu: {
 	// 250: Miner's Wobble: Enabled
 	// 251: Miner's Wobble: Disabled
 	// 252: Interface Movement Delay
-	// 253: Quick Trash: Disabled
+	253: Quick Bin: Disabled
 }
 
 LegacyTooltip: {
@@ -22786,8 +22786,8 @@ LegacyTooltip: {
 	// 53: " summon damage"
 	// 54: " range"
 	// 55: " damage"
-	// 56: Marked as favorite
-	// 57: Quick trash, stacking, and selling will be blocked
+	56: Marked as favourite
+	57: Quick bin, stacking, and selling will be blocked
 	// 58: " throwing damage"
 	// 59: It has been cursed by a powerful Jungle creature
 	// 60: Cannot be equipped or removed while shopping
@@ -22904,7 +22904,7 @@ LegacyMisc: {
 	// 80: Talk
 	// 81: Read
 	// 82: Back
-	// 83: Favorite
+	83: Favourite
 	// 84: You can't change teams inside your team's blocks!
 	// 85: Jungle Bug
 	// 86: Duck
